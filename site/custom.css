@@ -1,0 +1,27 @@
+/*
+Palette inspirée data :
+- Bleu : #1976d2
+- Vert : #43a047
+- Orange : #fb8c00
+- Gris : #37474f
+*/
+
+
+h1, h2, h3 {
+  color: #1976d2;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  border: none;
+  background: none;
+}
+
+.md-typeset a {
+  color: #fb8c00;
+}
+
+.md-typeset strong {
+  color: #37474f;
+}

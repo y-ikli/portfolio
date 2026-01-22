@@ -1,0 +1,54 @@
+
+repo_url: https://github.com/y-ikli/portfolio
+repo_name: y-ikli/portfolio
+site_url: https://y-ikli.github.io/portfolio/
+
+site_name: "Portfolio"
+nav:
+  - Accueil: index.md
+  - Expériences: experiences.md
+  - Compétences: competences.md
+  - Projets:
+      - Liste des projets: projets/index.md
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Basculer en mode sombre
+    - scheme: slate
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Basculer en mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+  language: fr
+  custom_dir: docs
+
+extra_css:
+  - custom.css
+
+extra:
+  search:
+    placeholder: Rechercher
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+
+
