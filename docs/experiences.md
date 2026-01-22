@@ -47,7 +47,6 @@ Cette page présente mes expériences sous l’angle des **responsabilités data
 - Mise en place de contrôles de cohérence et attention portée à la qualité et à la reproductibilité des traitements.
 - Collaboration avec des profils techniques et non techniques autour des usages des données.
 
-> Ce projet illustre une expérience data appliquée dans un contexte métier.
 ---
 
 ## Transmission et accompagnement technique
