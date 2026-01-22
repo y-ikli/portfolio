@@ -39,6 +39,9 @@ theme:
 extra_css:
   - custom.css
 
+extra_javascript:
+  - open_external_newtab.js
+
 extra:
   search:
     placeholder: Rechercher
