@@ -1,4 +1,4 @@
-# Projets
+<h1 style="color:#fb8c00;font-weight:700;">Projets</h1>
 
 Découvrez mes principaux projets ci-dessous.
 

@@ -1,4 +1,4 @@
-# Compétences
+<h1 style="color:#fb8c00;font-weight:700;">Compétences</h1>
 
 Mon profil couvre à la fois les dimensions **Data Engineering** et **Analytics Engineering**.  
 Cette double compétence me permet d’intervenir sur l’ensemble du cycle de vie de la donnée, depuis l’ingestion jusqu’à la mise à disposition de jeux de données exploitables.
