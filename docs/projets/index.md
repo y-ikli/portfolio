@@ -44,7 +44,7 @@ Les données marketing proviennent de multiples plateformes (Google Ads, Meta Ad
 ### À voir sur GitHub
 - Code source, documentation technique, guides d’utilisation, scripts de démo et architecture détaillée
 
-[Voir le dépôt GitHub](https://github.com/y-ikli/media-data-platform)
+<a href="https://github.com/y-ikli/media-data-platform" target="_blank" rel="noopener">Voir le dépôt GitHub</a>
 
 ---
 

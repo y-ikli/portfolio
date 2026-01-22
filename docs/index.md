@@ -3,10 +3,10 @@
 <h2 align="center">Younes IKLI</h2>
 
 <p align="center">
-  <a href="https://github.com/y-ikli">
+  <a href="https://github.com/y-ikli" target="_blank" rel="noopener">
     <img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub">
   </a>
-  <a href="https://linkedin.com/in/younes-ikli">
+  <a href="https://linkedin.com/in/younes-ikli" target="_blank" rel="noopener">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="mailto:younes.ikli@gmail.com">

@@ -1,7 +1,7 @@
 
-repo_url: https://github.com/y-ikli/portfolio
-repo_name: y-ikli/portfolio
-site_url: https://y-ikli.github.io/portfolio/
+#repo_url: https://github.com/y-ikli/portfolio
+#repo_name: y-ikli/portfolio
+#site_url: https://y-ikli.github.io/portfolio/
 
 site_name: "Portfolio"
 nav:
