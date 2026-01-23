@@ -550,6 +550,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ingestion-des-donnees-brutes-raw-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ingestion des données brutes (Raw layer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#transformations-de-donnees-sql-first" class="md-nav__link">
     <span class="md-ellipsis">
       Transformations de données (SQL-first)
@@ -559,18 +568,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#monitoring-qualite-des-donnees" class="md-nav__link">
+  <a href="#exposition-des-donnees-analytiques" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitoring &amp; qualité des données
+      Exposition des données analytiques
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resultats-analytiques" class="md-nav__link">
+  <a href="#voir-le-projet" class="md-nav__link">
     <span class="md-ellipsis">
-      Résultats analytiques
+      Voir le projet
     </span>
   </a>
   
@@ -692,6 +701,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ingestion-des-donnees-brutes-raw-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ingestion des données brutes (Raw layer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#transformations-de-donnees-sql-first" class="md-nav__link">
     <span class="md-ellipsis">
       Transformations de données (SQL-first)
@@ -701,18 +719,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#monitoring-qualite-des-donnees" class="md-nav__link">
+  <a href="#exposition-des-donnees-analytiques" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitoring &amp; qualité des données
+      Exposition des données analytiques
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resultats-analytiques" class="md-nav__link">
+  <a href="#voir-le-projet" class="md-nav__link">
     <span class="md-ellipsis">
-      Résultats analytiques
+      Voir le projet
     </span>
   </a>
   
@@ -785,17 +803,22 @@
 <p><img alt="DAG Airflow — orchestration des pipelines" src="../img/airflow_dag_detail.png" />
 <em>Vue des DAGs Airflow orchestrant l’ingestion multi-sources et les transformations analytiques.</em></p>
 <hr />
+<h3 id="ingestion-des-donnees-brutes-raw-layer">Ingestion des données brutes (Raw layer)<a class="headerlink" href="#ingestion-des-donnees-brutes-raw-layer" title="Permanent link">&para;</a></h3>
+<p><img alt="Tables raw Google Ads et Meta Ads" src="../img/data_quality_monitoring.png" />
+<em>Données brutes issues de Google Ads et Meta Ads, ingérées de manière incrémentale et historisée dans BigQuery.<br />
+Cette couche constitue la source de vérité du pipeline, sans logique métier appliquée.</em></p>
+<hr />
 <h3 id="transformations-de-donnees-sql-first">Transformations de données (SQL-first)<a class="headerlink" href="#transformations-de-donnees-sql-first" title="Permanent link">&para;</a></h3>
 <p><img alt="Transformations dbt — modèles et dépendances" src="../img/dbt_transformations_sql.png" />
-<em>Transformations SQL-first avec dbt, organisées en couches staging, intermediate et marts.</em></p>
+<em>Transformations SQL-first avec dbt, structurées en couches staging, intermediate et marts.</em></p>
 <hr />
-<h3 id="monitoring-qualite-des-donnees">Monitoring &amp; qualité des données<a class="headerlink" href="#monitoring-qualite-des-donnees" title="Permanent link">&para;</a></h3>
-<p><img alt="Monitoring et contrôles de qualité" src="../img/data_quality_monitoring.png" />
-<em>Suivi des exécutions, contrôles de qualité et détection des anomalies de données.</em></p>
+<h3 id="exposition-des-donnees-analytiques">Exposition des données analytiques<a class="headerlink" href="#exposition-des-donnees-analytiques" title="Permanent link">&para;</a></h3>
+<p><img alt="Tables marts — datasets métier" src="../img/marts.png" />
+<em>Jeux de données analytiques orientés métier, conçus pour la consommation BI, le reporting et les analyses marketing.</em></p>
 <hr />
-<h3 id="resultats-analytiques">Résultats analytiques<a class="headerlink" href="#resultats-analytiques" title="Permanent link">&para;</a></h3>
-<p><img alt="Exploration et analyse BigQuery" src="../img/bigquery_dashboard.png" />
-<em>Tables analytiques finales et requêtes BigQuery prêtes pour le reporting marketing.</em></p>
+<h3 id="voir-le-projet">Voir le projet<a class="headerlink" href="#voir-le-projet" title="Permanent link">&para;</a></h3>
+<p>👉 Code source, documentation et architecture détaillée disponibles sur GitHub :<br />
+https://github.com/y-ikli/media-data-platform</p>
 <hr />
 
 
