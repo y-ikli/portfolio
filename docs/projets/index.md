@@ -41,10 +41,36 @@ Les données marketing proviennent de multiples plateformes (Google Ads, Meta Ad
 - Monitoring, tests et CI/CD intégrés
 - Prêt pour le cloud (BigQuery, Snowflake)
 
-### À voir sur GitHub
-- Code source, documentation technique, guides d’utilisation, scripts de démo et architecture détaillée
+## Aperçu de la plateforme — de l’orchestration à l’analyse
 
-<a href="https://github.com/y-ikli/media-data-platform" target="_blank" rel="noopener">Voir le dépôt GitHub</a>
+### Orchestration centralisée
+![DAG Airflow — orchestration des pipelines](../img/airflow_dag_detail.png)
+*Vue des DAGs Airflow orchestrant l’ingestion multi-sources et les transformations analytiques.*
+
+---
+
+### Ingestion des données brutes (Raw layer)
+![Tables raw Google Ads et Meta Ads](../img/data_quality_monitoring.png)
+*Données brutes issues de Google Ads et Meta Ads, ingérées de manière incrémentale et historisée dans BigQuery.  
+Cette couche constitue la source de vérité du pipeline, sans logique métier appliquée.*
+
+---
+
+### Transformations de données (SQL-first)
+![Transformations dbt — modèles et dépendances](../img/dbt_transformations_sql.png)
+*Transformations SQL-first avec dbt, structurées en couches staging, intermediate et marts.*
+
+---
+
+### Exposition des données analytiques
+![Tables marts — datasets métier](../img/marts.png)
+*Jeux de données analytiques orientés métier, conçus pour la consommation BI, le reporting et les analyses marketing.*
+
+---
+
+### Voir le projet
+👉 Code source, documentation et architecture détaillée disponibles sur GitHub :  
+https://github.com/y-ikli/media-data-platform
 
 ---
 
