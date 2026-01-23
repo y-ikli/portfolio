@@ -51,8 +51,7 @@ Les données marketing proviennent de multiples plateformes (Google Ads, Meta Ad
 
 ### Ingestion des données brutes (Raw layer)
 ![Tables raw Google Ads et Meta Ads](../img/data_quality_monitoring.png)
-*Données brutes issues de Google Ads et Meta Ads, ingérées de manière incrémentale et historisée dans BigQuery.  
-Cette couche constitue la source de vérité du pipeline, sans logique métier appliquée.*
+*Données brutes issues de Google Ads et Meta Ads*
 
 ---
 
