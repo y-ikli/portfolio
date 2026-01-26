@@ -53,12 +53,6 @@ Un projet end-to-end illustrant un **socle data unique**, lisible selon deux ang
 - **Analytics Engineering** : modélisation analytique, KPIs, qualité et usages métier
 - **Data Engineering** : ingestion, orchestration, architecture et robustesse production
 
-Fonctionnalités clés :
-- Ingestion et normalisation de sources hétérogènes
-- Orchestration des traitements data
-- Transformations analytiques contrôlées
-- Tables analytiques prêtes à être consommées par la BI et les équipes produit
-
 ➡️ **[Voir le projet](projets/index.md)**
 
 ---
