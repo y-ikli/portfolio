@@ -1,99 +1,70 @@
-# Projet principal — Plateforme Data Marketing
+# Focus Projet : Marketing Data Platform
 
-Ce projet peut être lu selon **deux angles complémentaires**, en fonction du rôle ciblé :
+**L'objectif :** Construire une infrastructure robuste capable d'unifier les données de Google Ads et Meta Ads pour fournir une vision business transverse, fiable et automatisée.
 
-- **Data Engineer** : conception de la plateforme, ingestion, orchestration et robustesse opérationnelle  
-- **Analytics Engineer** : modélisation analytique, fiabilité des KPIs et usages métier
-
----
-
-## TL;DR — Analytics Engineering View
-<a id="analytics-engineering-view"></a>
-
-**Transformation de données marketing hétérogènes en KPIs fiables et exploitables par les équipes métier.**
-
-- Modélisation analytique SQL-first avec dbt (Raw → Staging → Intermediate → Marts)
-- Harmonisation des KPIs marketing (CTR, CPA, ROAS)
-- Tests automatisés, documentation et traçabilité des modèles
-- Production de data marts BI-ready pour le reporting et l’analyse
+> **Stack :** Python, Airflow, dbt, BigQuery, Docker, GitHub Actions.
 
 ---
 
-## TL;DR — Data Engineering View
-<a id="data-engineering-view"></a>
+## Architecture Technique
 
-**Construction d’une data platform cloud robuste et scalable pour l’ingestion multi-sources.**
+Cette plateforme repose sur un découplage strict entre le transport de la donnée et sa valorisation :
 
-- Pipelines d’ingestion incrémentaux et idempotents
-- Orchestration centralisée avec Airflow
-- Architecture modulaire et extensible
-- CI/CD, monitoring et contrôles de qualité intégrés
-
----
-
-## Contexte et objectifs
-
-**Une plateforme data marketing moderne, modulaire et cloud-ready**, conçue pour unifier, fiabiliser et valoriser
-les données issues de multiples régies publicitaires.
-
-### Problème
-Les données marketing proviennent de plateformes multiples (Google Ads, Meta Ads, TikTok, LinkedIn, etc.) avec :
-- Schémas hétérogènes et définitions KPI non harmonisées
-- Ingestions peu industrialisées et fragiles
-- Couplage fort entre reporting et systèmes sources
-- Absence de garanties de qualité des données
-
-### Solution
-- Architecture cloud-ready, modulaire et extensible
-- Ajout de nouveaux connecteurs via interface standardisée
-- Pipelines d’ingestion incrémentaux et testés (Airflow, dbt, CI/CD)
-- Séparation stricte des couches analytiques
-- Monitoring, tests automatisés et documentation intégrée
-
-### Impact
-- Ajout de nouvelles sources en moins d’un jour (vs. plusieurs semaines)
-- Données fiables en production grâce aux tests automatisés
-- Centralisation des données pour accélérer la prise de décision et les usages analytiques
-
----
-
-## Fonctionnalités clés
-
-- Ingestion multi-sources incrémentale et idempotente
-- Orchestration et transformations analytiques industrialisées
-- Tests, monitoring et CI/CD intégrés
-- Déploiement cloud-ready (BigQuery, Snowflake)
+1.  **Ingestion (Python + Airflow) :** Extraction via des connecteurs modulaires, gestion de l'idempotence et chargement dans le `RAW Layer` de BigQuery.
+2.  **Transformation (dbt) :** Passage par 4 couches de modélisation (Staging, Intermediate, Marts) pour garantir la qualité et la réutilisabilité.
+3.  **Orchestration :** Un DAG Airflow centralise le cycle de vie, avec des Task Groups pour paralléliser l'ingestion.
 
 ---
 
 ## Aperçu de la plateforme
 
-### Orchestration
+### 1. Orchestration & Monitoring (Airflow)
 ![DAG Airflow — orchestration des pipelines](../img/airflow_dag_detail.png)
+*Vue du DAG orchestrant l'ingestion parallélisée et le déclenchement des transformations dbt. Chaque étape inclut une logique de retry et un logging détaillé.*
 
-*DAGs Airflow orchestrant l’ingestion multi-sources et les transformations analytiques.*
-
-### Données brutes — Raw layer
-![Tables raw Google Ads et Meta Ads](../img/data_quality_monitoring.png)
-
-*Tables brutes issues de Google Ads et Meta Ads.*
-
-### Transformations analytiques
+### 2. Modélisation & Lignage (dbt)
 ![Transformations dbt — modèles et dépendances](../img/dbt_transformations_sql.png)
+*Structure des transformations en couches. Le passage du `Staging` au `Mart` permet d'isoler les règles de gestion métier de la structure brute des APIs.*
 
-*Modèles dbt structurés en couches staging, intermediate et marts.*
-
-### Exposition métier
+### 3. Qualité & Exposition (BigQuery)
 ![Tables marts — datasets métier](../img/marts.png)
-
-*Datasets analytiques orientés métier pour la BI, le reporting et l’analyse.*
-
----
-
-## Accès au projet
-L’ensemble du code source, de la documentation technique et des choix d’architecture est disponible sur GitHub :  
-[Consulter le dépôt GitHub](https://github.com/y-ikli/media-data-platform)
-
+*Exposition des Data Marts finaux dans BigQuery. Les données sont nettoyées, typées et prêtes pour être consommées par un outil de BI (Looker, Tableau).*
 
 ---
 
+## 🛠️ Le Regard "Data Engineer" (Infrastructure)
+
+*Comment j'ai assuré la robustesse du système :*
+
+* **Design Pattern "Connector" :** Développement d'une interface Python abstraite. L'ajout d'une nouvelle source se fait par configuration, garantissant une maintenance simplifiée.
+* **Ingestion Idempotente :** Utilisation de stratégies de chargement `Write-Truncate` sur partitions quotidiennes pour permettre de relancer n'importe quel pipeline sans risque de doublons.
+* **Contrôles de Volumétrie :** Script de monitoring comparant le nombre de lignes ingérées avec les moyennes historiques pour détecter les anomalies d'API.
+
+---
+
+## 📊 Le Regard "Analytics Engineer" (Modélisation)
+
+*Comment j'ai transformé la donnée en actif métier :*
+
+* **Unification Cross-Canal :** Harmonisation des schémas de Google et Meta (ex: `spend`, `clicks`, `impressions`) dans un modèle unique pour calculer un **ROAS global**.
+* **Data Quality as a Code :**
+    * Implémentation de tests `not_null` et `unique` sur les clés primaires.
+    * Tests de cohérence métier (ex: le coût ne peut pas être négatif).
+* **Documentation & Gouvernance :** Chaque colonne est documentée dans dbt, facilitant l'onboarding des analystes et la compréhension des KPIs.
+
+---
+
+## 📈 Résultats & Impact
+
+* **Fiabilité :** Détection proactive des erreurs d'API avant qu'elles n'atteignent les rapports métier.
+* **Agilité :** Passage d'une gestion manuelle par exports CSV à une plateforme 100% automatisée.
+* **Scalabilité :** Architecture prête à accueillir de nouvelles sources ou des modèles de prédiction (Machine Learning).
+
+---
+
+## 🔗 Liens du projet
+
+* **[Code Source sur GitHub](https://github.com/y-ikli/media-data-platform)** : Exploration de l'architecture, des DAGs Airflow et des modèles dbt.
+* **[Documentation Technique sur Github](https://github.com/y-ikli/media-data-platform/blob/main/docs/architecture.md)** : Détails des choix d'ingénierie et de la modélisation des données.
+
+---

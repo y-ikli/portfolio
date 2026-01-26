@@ -1,64 +1,57 @@
-# Portfolio — Younes IKLI
+# Younes IKLI — Data & Analytics Engineer
 
 <p align="center">
-  <a href="https://github.com/y-ikli" target="_blank" rel="noopener">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub">
+  <a href="https://github.com/y-ikli" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
-  <a href="https://linkedin.com/in/younes-ikli" target="_blank" rel="noopener">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn">
+  <a href="https://linkedin.com/in/younes-ikli" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="mailto:younes.ikli@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
 </p>
 
----
-
-## Présentation
-
-Ingénieur Data orienté produit, j’interviens au croisement du **Data Engineering** et de l’**Analytics Engineering**.  
-Je conçois des plateformes data robustes et des couches analytiques fiables, permettant de transformer des données
-complexes en **indicateurs clairs et actionnables** pour les équipes produit et métier.
+## À propos
+Ingénieur Data spécialisé dans la **Modern Data Stack**, j'évolue à la frontière entre l'ingénierie d'infrastructure et la modélisation métier. Mon objectif : transformer des flux de données brutes complexes en actifs stratégiques fiables et actionnables.
 
 ---
 
-## TL;DR – Analytics Engineering View
-<a id="tldr--analytics-engineering-view"></a>
+## Expertise Hybride
 
-**Construction et fiabilisation de la couche analytique au service du produit et du business.**
-
-- Modélisation analytique SQL-first avec dbt (facts / dimensions, grain maîtrisé)
-- Harmonisation et gouvernance des KPIs métier
-- Tests automatisés, documentation et qualité des données en production
-- Livraison de data marts BI-ready pour équipes produit, business et clients
-
----
-
-## TL;DR – Data Engineering View
-<a id="tldr--data-engineering-view"></a>
-
-**Conception et exploitation de data platforms fiables et scalables en environnement cloud.**
-
-- Ingestion multi-sources et pipelines incrémentaux orchestrés (Airflow)
-- Architectures modulaires, cloud-ready et orientées production
-- Monitoring, CI/CD et observabilité des pipelines
-- Scalabilité, résilience et maintenabilité des systèmes data
+| 🏗️ Data Engineering View | 📊 Analytics Engineering View |
+| :--- | :--- |
+| **Focus :** Fiabilité & Scalabilité | **Focus :** Qualité & Valeur Métier |
+| Ingestion multi-sources & Pipelines incrémentaux | Modélisation SQL-first (Kimball/Star Schema) |
+| Orchestration complexe (Airflow, Task Groups) | Gouvernance des KPIs & Documentation dbt |
+| Infrastructure as Code & CI/CD (GitHub Actions) | Tests de données automatisés & Data Contracts |
+| *Stack: Python, Airflow, Docker, Cloud Warehouses* | *Stack: dbt, SQL (Expert), BigQuery, Snowflake* |
 
 ---
 
-## Projet principal
+## Projet Phare : Marketing Data Platform
+*Une plateforme end-to-end unifiant les données de régies hétérogènes (Google Ads, Meta, etc.) dans un entrepôt de données cloud.*
 
-Un projet end-to-end illustrant un **socle data unique**, lisible selon deux angles complémentaires :
+### Pourquoi ce projet est unique :
+Ce projet illustre ma capacité à gérer un cycle de vie data complet avec deux angles de lecture :
 
-- **Analytics Engineering** : modélisation analytique, KPIs, qualité et usages métier
-- **Data Engineering** : ingestion, orchestration, architecture et robustesse production
+* **L'excellence opérationnelle (DE) :** Architecture modulaire permettant d'ajouter une source en moins d'un jour, ingestion idempotente et monitoring de volumétrie.
+* **La précision analytique (AE) :** Unification de schémas disparates dans un Data Mart unique, garantissant des KPIs (ROAS, CPA) 100% fiables grâce aux tests dbt.
 
-➡️ **[Voir le projet](projets/index.md)**
+➡️ **[Explorer le projet](./projets/index.md)** | **[Voir le code sur GitHub](https://github.com/y-ikli/media-data-platform)**
 
 ---
 
-<div style="font-size:0.9em; opacity:0.75;">
-Contexte professionnel et technique : <a href="experiences/">consulter</a>
+## Compétences Techniques
+
+* **Languages :** Python (Expert), SQL (Expert)
+* **Data Ops :** Airflow, Docker, CI/CD
+* **Transformation :** dbt, Data Modeling
+* **Warehouses :** BigQuery, Snowflake, PostgreSQL
+* **Data Quality :** Great Expectations, dbt-tests, Pytest
+
+---
+
+<div style="font-size:0.9em; opacity:0.8;">
+Consulter mon <a href="experiences.md">parcours professionnel</a> 
 </div>
-
-
