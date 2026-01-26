@@ -42,16 +42,6 @@ Ce projet illustre ma capacité à gérer un cycle de vie data complet avec deux
 
 ---
 
-## Compétences Techniques
-
-* **Languages :** Python (Expert), SQL (Expert)
-* **Data Ops :** Airflow, Docker, CI/CD
-* **Transformation :** dbt, Data Modeling
-* **Warehouses :** BigQuery, Snowflake, PostgreSQL
-* **Data Quality :** Great Expectations, dbt-tests, Pytest
-
----
-
 <div style="font-size:0.9em; opacity:0.8;">
 Consulter mon <a href="experiences.md">parcours professionnel</a> 
 </div>
