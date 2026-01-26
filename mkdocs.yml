@@ -6,8 +6,6 @@
 site_name: "Portfolio"
 nav:
   - Accueil: index.md
-  - Expériences: experiences.md
-  - Compétences: competences.md
   - Projets:
       - Liste des projets: projets/index.md
 

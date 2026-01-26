@@ -1,7 +1,4 @@
-
-<h1 style="color:#fb8c00;font-weight:700;">Portfolio — Data Engineer / Analytics Engineer</h1>
-
-<h2 align="center">Younes IKLI</h2>
+# Portfolio — Younes IKLI
 
 <p align="center">
   <a href="https://github.com/y-ikli" target="_blank" rel="noopener">
@@ -17,27 +14,55 @@
 
 ---
 
-## Profil
-Data Engineer / Analytics Engineer spécialisé dans la conception et l’exploitation de **plateformes data** et de **pipelines analytiques en production**.  
-Mon travail consiste à construire des systèmes **fiables**, **lisibles** et **évolutifs**, en tenant compte des contraintes opérationnelles et de la qualité des données.
+## Présentation
+
+Ingénieur Data orienté produit, j’interviens au croisement du **Data Engineering** et de l’**Analytics Engineering**.  
+Je conçois des plateformes data robustes et des couches analytiques fiables, permettant de transformer des données
+complexes en **indicateurs clairs et actionnables** pour les équipes produit et métier.
 
 ---
 
-## Ce que je fais
-- Concevoir et opérer des pipelines d’ingestion de données. 
-- Structurer et transformer les données pour des usages analytiques.  
-- Orchestrer et automatiser les traitements.  
-- Produire des tables analytiques fiables et exploitables.  
-- Documenter et maintenir des systèmes data dans la durée.
+## TL;DR – Analytics Engineering View
+<a id="tldr--analytics-engineering-view"></a>
+
+**Construction et fiabilisation de la couche analytique au service du produit et du business.**
+
+- Modélisation analytique SQL-first avec dbt (facts / dimensions, grain maîtrisé)
+- Harmonisation et gouvernance des KPIs métier
+- Tests automatisés, documentation et qualité des données en production
+- Livraison de data marts BI-ready pour équipes produit, business et clients
+
+---
+
+## TL;DR – Data Engineering View
+<a id="tldr--data-engineering-view"></a>
+
+**Conception et exploitation de data platforms fiables et scalables en environnement cloud.**
+
+- Ingestion multi-sources et pipelines incrémentaux orchestrés (Airflow)
+- Architectures modulaires, cloud-ready et orientées production
+- Monitoring, CI/CD et observabilité des pipelines
+- Scalabilité, résilience et maintenabilité des systèmes data
 
 ---
 
 ## Projet principal
-Un projet end-to-end illustrant une plateforme data opérationnelle :
 
-- ingestion et normalisation de sources hétérogènes  
-- orchestration des traitements  
-- transformations analytiques contrôlées  
-- tables analytiques prêtes à être consommées
+Un projet end-to-end illustrant un **socle data unique**, lisible selon deux angles complémentaires :
+
+- **Analytics Engineering** : modélisation analytique, KPIs, qualité et usages métier
+- **Data Engineering** : ingestion, orchestration, architecture et robustesse production
+
+Fonctionnalités clés :
+- Ingestion et normalisation de sources hétérogènes
+- Orchestration des traitements data
+- Transformations analytiques contrôlées
+- Tables analytiques prêtes à être consommées par la BI et les équipes produit
 
 ➡️ **[Voir le projet](projets/index.md)**
+
+---
+
+<div style="font-size:0.9em; opacity:0.75;">
+Contexte professionnel détaillé : <a href="experiences/">consulter</a>
+</div>

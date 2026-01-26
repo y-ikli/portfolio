@@ -1,6 +1,7 @@
-<h1 style="color:#fb8c00;font-weight:700;">Expériences</h1>
+# Contexte professionnel
 
-Cette page présente mes expériences sous l’angle de la **construction de pipelines**, de la **structuration des données** et de leur **mise à disposition pour des usages analytiques**, dans une logique orientée **Data Engineer / Analytics Engineer**.
+Cette page apporte un **complément de contexte** au portfolio.  
+Elle synthétise mon parcours sous l’angle de la **construction de plateformes et pipelines data** et de la **mise à disposition de données fiables pour des usages analytiques**, dans une logique **Data Engineer / Analytics Engineer**.
 
 ---
 
@@ -9,19 +10,19 @@ Cette page présente mes expériences sous l’angle de la **construction de pip
 ### Inria  
 **Data Engineer — Data Platform**
 
-- Mise en place et évolution d’une data platform cloud dédiée au développement et à la fiabilisation de pipelines de données.
-- Développement de pipelines en Python et SQL, avec tests, documentation et contrôles de cohérence.
-- Structuration de flux et de jeux de données analytiques utilisés par des équipes internes.
-- Collaboration avec différents profils techniques pour garantir l’exploitabilité et la stabilité des données.
+- Conception et évolution d’une data platform cloud orientée production.
+- Développement de pipelines Python / SQL avec tests, documentation et contrôles de cohérence.
+- Structuration de datasets analytiques utilisés par des équipes internes.
+- Collaboration avec des profils data et techniques pour garantir stabilité et exploitabilité.
 
 ---
 
 ### Apteeus  
 **Data Engineer**
 
-- Développement de pipelines ETL pour l’ingestion de données issues de fichiers structurés (TXT, CSV, Excel).
-- Transformation, mise en qualité et documentation de données à destination d’usages analytiques et de reporting.
-- Construction de bases analytiques cohérentes et exploitables dans le temps.
+- Développement de pipelines ETL pour données structurées (TXT, CSV, Excel).
+- Transformation, mise en qualité et documentation de données analytiques.
+- Construction de bases cohérentes et maintenables dans le temps.
 
 ---
 
@@ -29,58 +30,43 @@ Cette page présente mes expériences sous l’angle de la **construction de pip
 **Analytics Engineer**
 
 - Ingestion et normalisation de sources tabulaires hétérogènes.
-- Conception de transformations analytiques automatisées et de pipelines paramétrables.
-- Production de jeux de données exploitables par des utilisateurs métier.
+- Conception de transformations analytiques automatisées.
+- Production de datasets exploitables par des utilisateurs métier.
 
 ---
 
-## Projets
+## Projets significatifs
 
 ### Data Platform — Cas d’usage agence média
 
-- Projet de data platform simulant un contexte d’agence média.
-- Centralisation de sources de données hétérogènes et automatisation de leur ingestion et transformation.
-- Production de datasets analytiques structurés et exploitables pour des usages analytiques.
+- Plateforme data simulant un contexte d’agence média.
+- Centralisation de sources hétérogènes et automatisation ingestion / transformation.
+- Production de datasets analytiques structurés et prêts à l’usage.
 
 ---
 
 ### CHU de Lille  
 **Projet Data — Master 2 Data Science**
 
-- Projet professionnel réalisé dans le cadre du Master 2 Data Science au CHU de Lille.
-- Préparation, structuration et analyse de jeux de données complexes issus de signaux physiologiques.
-- Mise en œuvre de méthodes de classification visant à anticiper des crises d’épilepsie.
-- Attention portée à la qualité, à la cohérence et à la reproductibilité des traitements.
-- Collaboration avec des profils techniques et non techniques autour des usages des données.
+- Préparation et analyse de données issues de signaux physiologiques.
+- Mise en œuvre de méthodes de classification pour l’anticipation de crises d’épilepsie.
+- Attention portée à la qualité, la cohérence et la reproductibilité.
+- Collaboration avec des profils techniques et non techniques.
 
 ---
 
-## Transmission et accompagnement
+## Transmission et engagements
 
 - Tutorat universitaire en programmation Python.
-- Vulgarisation de concepts techniques auprès de publics non spécialisés.
-- Accompagnement et transmission de bonnes pratiques autour du code et des données.
-
----
-
-## Engagements et activités complémentaires
-
-**Conseil de développement — Métropole Européenne de Lille**
-- Participation à des groupes de travail et ateliers thématiques.
-- Travail collaboratif avec des acteurs institutionnels et associatifs.
-
-**Association Alis — Promotion du logiciel libre**
-- Contribution à des initiatives de diffusion du logiciel libre.
-- Organisation et animation d’ateliers techniques.
-- Coordination de projets et d’équipes bénévoles.
+- Vulgarisation de concepts data et accompagnement de bonnes pratiques.
+- Engagement associatif autour du logiciel libre et de projets collaboratifs.
 
 ---
 
 ## Synthèse
 
-Ces expériences illustrent :
+- Conception et exploitation de plateformes et pipelines data.
+- Structuration et transformation de données à des fins analytiques.
+- Forte attention à la qualité, la fiabilité et la documentation.
+- Pratique régulière de la collaboration et de la transmission technique.
 
-- la conception et l’exploitation de plateformes et de pipelines data,
-- la structuration et la transformation de données à des fins analytiques,
-- l’attention portée à la qualité, à la fiabilité et à la documentation des données,
-- une pratique régulière de la collaboration et de la transmission technique.
