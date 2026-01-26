@@ -64,5 +64,7 @@ Fonctionnalités clés :
 ---
 
 <div style="font-size:0.9em; opacity:0.75;">
-Contexte professionnel détaillé : <a href="experiences/">consulter</a>
+Contexte professionnel et technique : <a href="experiences/">consulter</a>
 </div>
+
+
