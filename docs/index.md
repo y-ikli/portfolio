@@ -43,5 +43,5 @@ Ce projet illustre ma capacité à gérer un cycle de vie data complet avec deux
 ---
 
 <div style="font-size:0.9em; opacity:0.8;">
-Consulter mon <a href="experiences.md">parcours professionnel</a> 
+Consulter mon <a href="experiences">parcours professionnel</a> 
 </div>
