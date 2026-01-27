@@ -19,18 +19,30 @@ Ingénieur Data spécialisé dans la **Modern Data Stack**, j'évolue à la fron
 
 ## Expertise Hybride
 
-| 🏗️ Data Engineering View | 📊 Analytics Engineering View |
+## Expertise Data
+
+## Expertise Data
+
+| 🏗️ Data Engineering | 📊 Analytics Engineering |
 | :--- | :--- |
-| **Focus :** Fiabilité & Scalabilité | **Focus :** Qualité & Valeur Métier |
-| Ingestion multi-sources & Pipelines incrémentaux | Modélisation SQL-first (Kimball/Star Schema) |
-| Orchestration complexe (Airflow, Task Groups) | Gouvernance des KPIs & Documentation dbt |
-| Infrastructure as Code & CI/CD (GitHub Actions) | Tests de données automatisés & Data Contracts |
-| *Stack: Python, Airflow, Docker, Cloud Warehouses* | *Stack: dbt, SQL (Expert), BigQuery, Snowflake* |
+| **Objectif :** Fiabilité des pipelines | **Objectif :** Qualité des données analytiques |
+| Ingestion de données multi-sources | Modélisation de données orientée analyse |
+| Pipelines ELT orchestrés (Airflow) | Transformations SQL avec dbt |
+| Automatisation et structuration des flux | Définition et documentation de datasets |
+| CI/CD avec GitLab CI | Tests de données et contrôles de cohérence |
+| *Outils : Python, Airflow, Docker, Cloud DWH* | *Outils : SQL, dbt, BigQuery / Snowflake* |
+
+
 
 ---
 
 ## Projet Phare : Marketing Data Platform
-*Une plateforme end-to-end unifiant les données de régies hétérogènes (Google Ads, Meta, etc.) dans un entrepôt de données cloud.*
+
+
+*Projet personnel visant à reproduire les patterns d’une data platform moderne en conditions proches de la production.*
+
+*Plateforme end-to-end unifiant les données de régies hétérogènes (Google Ads, Meta, etc.) dans un entrepôt de données cloud, depuis l’ingestion des données brutes jusqu’à la production de datasets analytiques fiables.*
+
 
 ### Pourquoi ce projet est unique :
 Ce projet illustre ma capacité à gérer un cycle de vie data complet avec deux angles de lecture :
