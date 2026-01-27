@@ -17,10 +17,6 @@ Ingénieur Data spécialisé dans la **Modern Data Stack**, j'évolue à la fron
 
 ---
 
-## Expertise Hybride
-
-## Expertise Data
-
 ## Expertise Data
 
 | 🏗️ Data Engineering | 📊 Analytics Engineering |
