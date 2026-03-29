@@ -7,8 +7,8 @@ site_name: "Portfolio"
 nav:
   - Accueil: index.md
   - Projets:
-      - Agence Média: projets/agence_media.md
-      - MonCapitain : Projets/moncapitain.md
+    - Agence Média: projets/agence_media.md
+    - MonCapitain: projets/moncapitain.md
 
 theme:
   name: material
