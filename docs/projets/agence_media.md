@@ -19,15 +19,16 @@ Cette plateforme repose sur un découplage strict entre le transport de la donn�
 ## Aperçu de la plateforme
 
 ### 1. Orchestration & Monitoring (Airflow)
-![DAG Airflow — orchestration des pipelines](../img/airflow_dag_detail.png)
+![DAG Airflow — orchestration des pipelines](../images_projets/agence_media/airflow_dag_detail.png
+)
 *Vue du DAG orchestrant l'ingestion parallélisée et le déclenchement des transformations dbt. Chaque étape inclut une logique de retry et un logging détaillé.*
 
 ### 2. Modélisation & Lignage (dbt)
-![Transformations dbt — modèles et dépendances](../img/dbt_transformations_sql.png)
+![Transformations dbt — modèles et dépendances](../images_projets/agence_media/dbt_transformations_sql.png)
 *Structure des transformations en couches. Le passage du `Staging` au `Mart` permet d'isoler les règles de gestion métier de la structure brute des APIs.*
 
 ### 3. Qualité & Exposition (BigQuery)
-![Tables marts — datasets métier](../img/marts.png)
+![Tables marts — datasets métier](../images_projets/agence_media/marts.png)
 *Exposition des Data Marts finaux dans BigQuery. Les données sont nettoyées, typées et prêtes pour être consommées par un outil de BI (Looker, Tableau).*
 
 ---
