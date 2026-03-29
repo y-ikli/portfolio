@@ -7,6 +7,7 @@ site_name: "Portfolio"
 nav:
   - Accueil: index.md
   - Projets:
+    - 'Mes Projets': projets/index.md
     - Agence Média: projets/agence_media.md
     - MonCapitain: projets/moncapitain.md
 
