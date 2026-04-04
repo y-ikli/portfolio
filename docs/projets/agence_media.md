@@ -1,4 +1,4 @@
-# Focus Projet : Marketing Data Platform
+# Projet : Marketing Data Platform
 
 **L'objectif :** Construire une infrastructure robuste capable d'unifier les données de Google Ads et Meta Ads pour fournir une vision business transverse, fiable et automatisée.
 

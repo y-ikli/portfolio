@@ -13,11 +13,11 @@
 </p>
 
 ## À propos
-Ingénieur Data spécialisé dans la **Modern Data Stack**, j'évolue à la frontière entre l'ingénierie d'infrastructure et la modélisation métier. Mon objectif : transformer des flux de données brutes complexes en actifs stratégiques fiables et actionnables.
+Ingénieur Data passionné par la résolution de problèmes métier, j'utilise la **Modern Data Stack** pour comprendre les besoins business et proposer des solutions data-driven. Mon objectif : répondre aux enjeux métier en transformant des données brutes en insights actionnables et en développant des outils adaptés.
 
 ---
 
-## Expertise Data
+## Compétences
 
 | 🏗️ Data Engineering | 📊 Analytics Engineering |
 | :--- | :--- |
@@ -25,28 +25,10 @@ Ingénieur Data spécialisé dans la **Modern Data Stack**, j'évolue à la fron
 | Ingestion de données multi-sources | Modélisation de données orientée analyse |
 | Pipelines ELT orchestrés (Airflow) | Transformations SQL avec dbt |
 | Automatisation et structuration des flux | Définition et documentation de datasets |
-| CI/CD avec GitLab CI | Tests de données et contrôles de cohérence |
+| CI/CD et versioning | Tests de données et contrôles de cohérence |
 | *Outils : Python, Airflow, Docker, Cloud DWH* | *Outils : SQL, dbt, BigQuery / Snowflake* |
 
-
-
----
-
-## Projet Phare : Marketing Data Platform
-
-
-*Projet personnel visant à reproduire les patterns d’une data platform moderne en conditions proches de la production.*
-
-*Plateforme end-to-end unifiant les données de régies hétérogènes (Google Ads, Meta, etc.) dans un entrepôt de données cloud, depuis l’ingestion des données brutes jusqu’à la production de datasets analytiques fiables.*
-
-
-### Pourquoi ce projet est unique :
-Ce projet illustre ma capacité à gérer un cycle de vie data complet avec deux angles de lecture :
-
-* **L'excellence opérationnelle (DE) :** Architecture modulaire permettant d'ajouter une source en moins d'un jour, ingestion idempotente et monitoring de volumétrie.
-* **La précision analytique (AE) :** Unification de schémas disparates dans un Data Mart unique, garantissant des KPIs (ROAS, CPA) 100% fiables grâce aux tests dbt.
-
-➡️ **[Explorer le projet](./projets/index.md)** | **[Voir le code sur GitHub](https://github.com/y-ikli/media-data-platform)**
+➡️ **[Explorer les projets réalisés](./projets/index.md)**
 
 ---
 
