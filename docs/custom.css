@@ -25,3 +25,69 @@ h1, h2, h3 {
 .md-typeset strong {
   color: #37474f;
 }
+
+/* Utiliser toute la largeur disponible */
+.md-grid {
+  max-width: 100% !important;
+}
+
+.md-main__inner {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.md-main {
+  max-width: none !important;
+}
+
+.md-content {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.md-content__inner {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 1.5rem !important;
+  margin: 0 !important;
+}
+
+.md-typeset {
+  max-width: 100% !important;
+}
+
+/* Barres latérales */
+.md-sidebar,
+.md-sidebar--secondary {
+  max-width: 240px !important;
+  min-width: 200px !important;
+}
+
+/* Tableaux responsive et plus lisibles */
+.md-typeset table {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.md-typeset table th,
+.md-typeset table td {
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(55, 71, 79, 0.14);
+  text-align: left;
+  vertical-align: top;
+}
+
+.md-typeset table th {
+  background: rgba(25, 118, 210, 0.08);
+  color: #1976d2;
+}
+
+.md-typeset table tr:nth-child(even) {
+  background: rgba(25, 118, 210, 0.03);
+}
