@@ -26,53 +26,16 @@ h1, h2, h3 {
   color: #37474f;
 }
 
-/* Utiliser toute la largeur disponible */
+/* Pleine largeur : seul .md-grid contrôle le centrage dans Material */
 .md-grid {
   max-width: 100% !important;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
-.md-main__inner {
-  max-width: 100% !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.md-main {
-  max-width: none !important;
-}
-
-.md-content {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-.md-content__inner {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding: 1.5rem !important;
-  margin: 0 !important;
-}
-
-.md-typeset {
-  max-width: 100% !important;
-}
-
-/* Header et onglets de navigation pleine largeur */
-.md-header__inner,
-.md-tabs__list {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-}
-
-/* Barres latérales */
-.md-sidebar,
-.md-sidebar--secondary {
-  max-width: 240px !important;
-  min-width: 200px !important;
+/* Empêcher le défilement horizontal */
+body {
+  overflow-x: hidden;
 }
 
 /* Tableaux responsive et plus lisibles */
