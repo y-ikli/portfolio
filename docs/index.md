@@ -16,7 +16,8 @@
         <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
       </a>
     </p>
-    <p style="margin: 0; color: #555; font-size: 0.95em;">Lille, France · Disponible dès mai 2026</p>
+    <p style="margin: 0; color: #555; font-size: 0.95em;">Disponible dès mai 2026</p>
+    <p style="margin: 0.3rem 0 0; color: #555; font-size: 0.95em;">Mobilité : Lille · Paris · France</p>
   </div>
 </div>
 
@@ -38,10 +39,8 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
   <div style="flex: 1 1 300px; border: 1px solid #1976d2; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 12px rgba(25,118,210,0.10); display: flex; flex-direction: column;">
     <div style="background: #1976d2; padding: 1.1rem 1.4rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 0.8rem;">
       <div>
-        <div style="color: rgba(255,255,255,0.75); font-size: 0.72em; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.2rem; font-weight: 600;">Offre · Data Engineering</div>
         <div style="color: #fff; font-size: 1.18em; font-weight: 700; line-height: 1.2;">Data Engineer</div>
       </div>
-      <span style="background: #e8f5e9; color: #1b5e20; font-size: 0.72em; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.28rem 0.7rem; border-radius: 20px; white-space: nowrap; flex-shrink: 0;">Disponible</span>
     </div>
     <div style="padding: 1.2rem 1.4rem; flex: 1; display: flex; flex-direction: column; gap: 1.1rem;">
       <div>
@@ -69,10 +68,8 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
   <div style="flex: 1 1 300px; border: 1px solid #43a047; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 12px rgba(67,160,71,0.10); display: flex; flex-direction: column;">
     <div style="background: #43a047; padding: 1.1rem 1.4rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 0.8rem;">
       <div>
-        <div style="color: rgba(255,255,255,0.75); font-size: 0.72em; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.2rem; font-weight: 600;">Offre · Analytics Engineering</div>
         <div style="color: #fff; font-size: 1.18em; font-weight: 700; line-height: 1.2;">Analytics Engineer</div>
       </div>
-      <span style="background: #e8f5e9; color: #1b5e20; font-size: 0.72em; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.28rem 0.7rem; border-radius: 20px; white-space: nowrap; flex-shrink: 0;">Disponible</span>
     </div>
     <div style="padding: 1.2rem 1.4rem; flex: 1;">
       <div style="font-size: 0.78em; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: #43a047; margin-bottom: 0.6rem;">Missions</div>
@@ -198,7 +195,7 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
 
 ## Engagements
 
-- **Conseiller (ex-président) de l'association ALIS — Maroc** *(promotion du logiciel libre, open source et Linux)*
-- **Membre du Conseil de Développement de la MEL — France**  *(Métropole Européenne de Lille)* — participation aux orientations stratégiques du territoire.
+- **Membre du Conseil de Développement de la MEL — France** *(Métropole Européenne de Lille)* — participation aux orientations stratégiques du territoire. · *depuis 2025*
+- **Conseiller (ex-président) de l'association ALIS — Maroc** *(promotion du logiciel libre, open source et Linux)* · *depuis 2008*
 
 ---
