@@ -1,7 +1,15 @@
 # Projets
 
-Découvrez mes projets principaux :
+## [Marketing Data Platform](agence_media.md)
 
-- 🏗️ **[Agence Média](agence_media.md)** : Plateforme de données marketing unifiant Google Ads et Meta Ads pour une vision business transverse automatisée. Utilise Python, Airflow, dbt et BigQuery.
+Pipeline ELT unifiant Meta Ads et Google Ads dans BigQuery — normalisation des KPI, transformations dbt et validation qualité automatisée.
 
-- 🤖 **[MonCapitain](moncapitain.md)** : IA locale pour l'analyse de corpus documentaires scientifiques. Permet de poser des questions naturelles sur des documents internes et d'obtenir des réponses ancrées dans les sources, avec une architecture modulaire intégrant des outils chimio-informatiques (RDKit).
+**Stack :** Python · BigQuery · dbt · GitHub Actions
+
+---
+
+## [MonCapitain](moncapitain.md)
+
+RAG local pour l'analyse de corpus documentaires scientifiques — questions en langage naturel sur des documents internes, réponses ancrées dans les sources, avec intégration d'outils chimio-informatiques (RDKit).
+
+**Stack :** Python · LangChain · Ollama · RDKit
