@@ -18,7 +18,7 @@
     
     
       
-        <title>Projet : Marketing Data Platform - Portfolio</title>
+        <title>Marketing Data Platform - Portfolio</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#projet-marketing-data-platform" class="md-skip">
+        <a href="#marketing-data-platform" class="md-skip">
           Aller au contenu
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Projet : Marketing Data Platform
+              Marketing Data Platform
             
           </span>
         </div>
@@ -427,15 +427,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#detail-du-projet" class="md-nav__link">
-    <span class="md-ellipsis">
-      Détail du projet
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#architecture" class="md-nav__link">
     <span class="md-ellipsis">
       Architecture
@@ -445,9 +436,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#donnees-reelles" class="md-nav__link">
+  <a href="#resultats" class="md-nav__link">
     <span class="md-ellipsis">
-      Données réelles
+      Résultats
     </span>
   </a>
   
@@ -482,27 +473,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#modeles-dbt-run-results-et-les-tests" class="md-nav__link">
+  <a href="#dbt-run-et-tests" class="md-nav__link">
     <span class="md-ellipsis">
-      Modèles dbt — run results et les tests
+      dbt — run et tests
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lineage-dbt-chaine-de-transformation" class="md-nav__link">
+  <a href="#dbt-lineage" class="md-nav__link">
     <span class="md-ellipsis">
-      Lineage dbt — chaîne de transformation
+      dbt — lineage
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#documentation-dbt" class="md-nav__link">
+  <a href="#dbt-documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Documentation dbt
+      dbt — documentation
     </span>
   </a>
   
@@ -510,15 +501,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-    </span>
-  </a>
   
 </li>
       
@@ -542,27 +524,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-architecture-medallion-bigquery" class="md-nav__link">
+  <a href="#2-architecture-medallion" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Architecture Medallion BigQuery
+      2. Architecture Medallion
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-transformations-dbt" class="md-nav__link">
+  <a href="#3-kpi-dbt-safe_divide-jamais-de-division-par-zero" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Transformations dbt
+      3. KPI dbt — SAFE_DIVIDE (jamais de division par zéro)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-qualite-des-donnees-36-tests-dbt" class="md-nav__link">
+  <a href="#4-qualite-36-tests-dbt" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Qualité des données — 36 tests dbt
+      4. Qualité — 36 tests dbt
     </span>
   </a>
   
@@ -583,19 +565,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#choix-technologiques-et-alternatives" class="md-nav__link">
+  <a href="#choix-techniques" class="md-nav__link">
     <span class="md-ellipsis">
-      Choix technologiques et alternatives
+      Choix techniques
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Choix technologiques et alternatives">
+    <nav class="md-nav" aria-label="Choix techniques">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ingestion-connecteur-python-custom-vs-outils-manages" class="md-nav__link">
+  <a href="#ingestion-connecteur-custom-vs-outils-manages" class="md-nav__link">
     <span class="md-ellipsis">
-      Ingestion : connecteur Python custom vs outils managés
+      Ingestion : connecteur custom vs outils managés
     </span>
   </a>
   
@@ -613,7 +595,7 @@
           <li class="md-nav__item">
   <a href="#data-warehouse-pourquoi-bigquery" class="md-nav__link">
     <span class="md-ellipsis">
-      Data Warehouse : pourquoi BigQuery ?
+      Data warehouse : pourquoi BigQuery ?
     </span>
   </a>
   
@@ -625,9 +607,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#points-techniques-notables" class="md-nav__link">
+  <a href="#points-notables" class="md-nav__link">
     <span class="md-ellipsis">
-      Points techniques notables
+      Points notables
     </span>
   </a>
   
@@ -658,63 +640,42 @@
 
 
 
-<h1 id="projet-marketing-data-platform">Projet : Marketing Data Platform<a class="headerlink" href="#projet-marketing-data-platform" title="Permanent link">&para;</a></h1>
-<p><strong>Pipeline ELT de données publicitaires</strong> — Meta Ads (API réelle) + Google Ads — vers des data marts analytiques dans Google BigQuery, avec transformations dbt et validation qualité automatisée.</p>
+<h1 id="marketing-data-platform">Marketing Data Platform<a class="headerlink" href="#marketing-data-platform" title="Permanent link">&para;</a></h1>
+<p><strong>Pipeline ELT publicitaire</strong> — Meta Ads (API réelle) + Google Ads — vers des data marts analytiques dans BigQuery, avec transformations dbt et validation qualité automatisée.</p>
 <blockquote>
-<p><strong>Stack :</strong> Python, dbt, BigQuery, GitHub Actions</p>
+<p><strong>Stack :</strong> Python · BigQuery ·dbt · GitHub Actions</p>
 </blockquote>
 <hr />
 <h2 id="contexte">Contexte<a class="headerlink" href="#contexte" title="Permanent link">&para;</a></h2>
-<p>Une agence marketing gère des campagnes publicitaires sur plusieurs plateformes simultanément — Meta Ads, Google Ads, et potentiellement d'autres.
-Chaque plateforme expose ses données dans son propre format, avec ses propres nommages et ses propres métriques.
-Résultat : les équipes passent du temps à consolider des exports manuels, les KPI sont recalculés différemment selon la source, et personne n'a une vision cross-platform fiable.</p>
-<p>Le besoin est simple : une seule table, une seule définition du CTR, une seule source de vérité pour comparer Meta et Google sur les mêmes dates et les mêmes campagnes — et prendre de meilleures décisions budgétaires.</p>
-<p>Pour y répondre, j'ai construit un pipeline ELT complet :</p>
-<ul>
-<li>Connecteurs Python par source (Meta via API réelle, Google via interface simulée) avec une classe abstraite commune — extensible à TikTok, LinkedIn sans refonte</li>
-<li>Chargement des données brutes dans BigQuery avec métadonnées d'ingestion tracées par UUID</li>
-<li>Transformations dbt en 3 couches : staging (nettoyage par source), intermediate (union des schémas), mart (KPI calculés)</li>
-<li>36 tests de qualité automatiques validant la cohérence des données à chaque run</li>
-<li>Pipeline CI/CD GitHub Actions : lint, tests unitaires, validation dbt à chaque push</li>
-</ul>
-<p>Au final : <strong>4 727 lignes</strong> dans la table analytique finale, <strong>36 tests PASS</strong>, et un dashboard Looker Studio connecté directement — sans transformation supplémentaire.</p>
-<blockquote>
-<p>Sans ce socle, les décisions budgétaires (augmenter le budget Meta ou Google ?) reposent sur des chiffres non comparables. Ce projet résout exactement ça.</p>
-</blockquote>
-<p>En production avec des campagnes actives, ce pipeline s'exécuterait quotidiennement via Airflow — chaque matin, les données J-1 sont disponibles dans Looker Studio sans intervention manuelle.</p>
-<hr />
-<h2 id="detail-du-projet">Détail du projet<a class="headerlink" href="#detail-du-projet" title="Permanent link">&para;</a></h2>
-<p>Une campagne publicitaire est terminée. On veut analyser ses performances de manière consolidée : CTR, CPC, CPA, ROAS — par plateforme, par campagne, par période.</p>
-<p>Chaque plateforme (Meta, Google) expose ses propres schémas et nommages. Ce projet construit le socle de données qui normalise tout en une table analytique unique, cohérente et validée.</p>
+<p>Une agence marketing gère des campagnes sur Meta et Google simultanément. Chaque plateforme expose ses données dans son propre format : nommages différents, métriques incohérentes, exports manuels.</p>
+<p><strong>Problème concret :</strong> le CTR n'est pas calculé de la même façon selon la source. Comparer Meta et Google sur les mêmes campagnes et les mêmes dates devient impossible sans un socle normalisé.</p>
+<p><strong>Solution :</strong> un pipeline ELT qui unifie les deux sources en une seule table analytique, avec une définition unique de chaque KPI.</p>
 <hr />
 <h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>Meta Ads API (réelle)          Google Ads (simulé)
         │                              │
         ▼                              ▼
   Python connector             Python connector
-  (facebook-business SDK)      (même interface — Strategy pattern)
+  (facebook-business SDK)      (Strategy pattern — même interface)
         │                              │
         └──────────────┬───────────────┘
                        ▼
               mdp_raw (BigQuery)
-              Données brutes + métadonnées d&#39;ingestion
+              Données brutes + métadonnées (UUID, ingested_at)
               Partitionné par date — idempotent
                        │
                        ▼
-              dbt Transformations
+              dbt — 3 couches
               ├─► Staging       — typage, nettoyage, standardisation par source
               ├─► Intermediate  — union des schémas (UNION ALL)
               └─► Marts         — KPI calculés, prêts pour la BI
-                       │
-                       ▼
-              Looker Studio dashboard
 </code></pre></div>
 
 <blockquote>
-<p>En production avec des campagnes actives, un orchestrateur comme Apache Airflow déclencherait ce pipeline quotidiennement pour ingérer les nouvelles données J-1, relancer dbt et valider la qualité automatiquement.</p>
+<p>En production, un orchestrateur (Airflow) déclencherait ce pipeline quotidiennement pour ingérer les données J-1, relancer dbt et valider la qualité.</p>
 </blockquote>
 <hr />
-<h2 id="donnees-reelles">Données réelles<a class="headerlink" href="#donnees-reelles" title="Permanent link">&para;</a></h2>
+<h2 id="resultats">Résultats<a class="headerlink" href="#resultats" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -742,53 +703,38 @@ Résultat : les équipes passent du temps à consolider des exports manuels, les
 </tr>
 </tbody>
 </table>
+<p><strong>Table finale :</strong> 4 727 lignes · 36 tests PASS · 0 erreur</p>
 <hr />
 <h2 id="apercu">Aperçu<a class="headerlink" href="#apercu" title="Permanent link">&para;</a></h2>
-<hr />
 <h3 id="bigquery-architecture-medallion">BigQuery — architecture Medallion<a class="headerlink" href="#bigquery-architecture-medallion" title="Permanent link">&para;</a></h3>
-<!-- Capture : console BigQuery, panneau gauche
-     Montre les 4 datasets : mdp_raw, mdp_staging, mdp_intermediate, mdp_marts
-     Prouve l'architecture en couches dans le vrai cloud -->
 <p><img alt="BigQuery datasets" src="../../images_projets/agence_media/bigquery_datasets.png" />
-<em>Architecture Medallion dans BigQuery : 4 datasets avec responsabilités distinctes.</em></p>
+<em>4 datasets avec responsabilités distinctes : raw → staging → intermediate → marts.</em></p>
 <hr />
 <h3 id="bigquery-table-finale">BigQuery — table finale<a class="headerlink" href="#bigquery-table-finale" title="Permanent link">&para;</a></h3>
-<!-- Capture : console BigQuery, onglet Preview de mart_campaign_daily
-     Montre les colonnes (report_date, campaign_id, platform, impressions, clicks, spend, ctr, cpc, cpa, roas...)
-     Idéalement : faire défiler pour voir à la fois des lignes meta_ads et google_ads côte à côte
-     Le nombre de lignes visible en bas (~4 727 rows) est un bon signal -->
 <p><img alt="BigQuery mart_campaign_daily" src="../../images_projets/agence_media/bigquery_mart.png" />
-<em>Table <code>mart_campaign_daily</code> : ~4 700 lignes, colonnes KPI calculées, données Meta réelles + Google simulées.</em></p>
+<em><code>mart_campaign_daily</code> : ~4 700 lignes, KPI calculés, données Meta + Google unifiées.</em></p>
 <hr />
-<h3 id="modeles-dbt-run-results-et-les-tests">Modèles dbt — run results et les tests<a class="headerlink" href="#modeles-dbt-run-results-et-les-tests" title="Permanent link">&para;</a></h3>
-<!-- Capture : résultat de `dbt run` + `dbt test` dans dbt Cloud ou terminal
-     Montre les 4 modèles en vert (PASS) et les 36 tests PASS avec les temps d'exécution -->
+<h3 id="dbt-run-et-tests">dbt — run et tests<a class="headerlink" href="#dbt-run-et-tests" title="Permanent link">&para;</a></h3>
 <p><img alt="dbt run results" src="../../images_projets/agence_media/dbt_run.png" />
 <img alt="dbt test results" src="../../images_projets/agence_media/dbt_test.png" />
-<em>4 modèles PASS, 36 tests PASS. Aucune erreur, aucun warning.</em></p>
+<em>4 modèles PASS · 36 tests PASS · aucun warning.</em></p>
 <hr />
-<h3 id="lineage-dbt-chaine-de-transformation">Lineage dbt — chaîne de transformation<a class="headerlink" href="#lineage-dbt-chaine-de-transformation" title="Permanent link">&para;</a></h3>
-<!-- Capture : onglet Lineage dans dbt Cloud IDE
-     Montre les 4 nœuds en chaîne :
-     raw_meta_ads + raw_google_ads (vert) → stg_* → int_campaign_daily_unified → mart_campaign_daily
-     Le lineage prouve la séparation claire ingestion / transformation et la traçabilité end-to-end -->
+<h3 id="dbt-lineage">dbt — lineage<a class="headerlink" href="#dbt-lineage" title="Permanent link">&para;</a></h3>
 <p><img alt="Lineage dbt" src="../../images_projets/agence_media/lineage.png" />
-<em>Lineage graph dbt : sources (vert) → staging → intermediate → marts. Séparation claire entre la couche d'ingestion Python et la couche de transformation dbt.</em></p>
-<h3 id="documentation-dbt">Documentation dbt<a class="headerlink" href="#documentation-dbt" title="Permanent link">&para;</a></h3>
-<!-- Capture : onglet Documentation dans dbt Cloud IDE
-     Montre la documentation auto-générée pour mart_campaign_daily
-     Idéalement : faire défiler pour montrer les descriptions de colonnes, les formules des KPI, les tests associés -->
-<h2 id="_1"><img alt="Documentation dbt" src="../../images_projets/agence_media/dbt_serve.png" /><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<em>Sources → staging → intermediate → marts. Traçabilité end-to-end.</em></p>
+<h3 id="dbt-documentation">dbt — documentation<a class="headerlink" href="#dbt-documentation" title="Permanent link">&para;</a></h3>
+<p><img alt="Documentation dbt" src="../../images_projets/agence_media/dbt_serve.png" /></p>
+<hr />
 <h2 id="detail-technique">Détail technique<a class="headerlink" href="#detail-technique" title="Permanent link">&para;</a></h2>
 <h3 id="1-ingestion-python-pattern-strategy">1. Ingestion Python — pattern Strategy<a class="headerlink" href="#1-ingestion-python-pattern-strategy" title="Permanent link">&para;</a></h3>
 <p>Classe abstraite <code>DataSourceConnector</code> avec 3 étapes :</p>
 <div class="codehilite"><pre><span></span><code><span class="n">extract</span><span class="p">()</span><span class="w">            </span><span class="err">←</span><span class="w"> </span><span class="n">implémenté</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">chaque</span><span class="w"> </span><span class="n">source</span>
 <span class="n">load_raw</span><span class="p">()</span><span class="w">           </span><span class="err">←</span><span class="w"> </span><span class="n">enrichissement</span><span class="w"> </span><span class="n">metadata</span><span class="w"> </span><span class="p">(</span><span class="n">ingested_at</span><span class="p">,</span><span class="w"> </span><span class="n">extract_run_id</span><span class="w"> </span><span class="n">UUID</span><span class="p">)</span>
-<span class="n">write_to_bigquery</span><span class="p">()</span><span class="w">  </span><span class="err">←</span><span class="w"> </span><span class="err">é</span><span class="n">criture</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">WRITE_APPEND</span><span class="p">,</span><span class="w"> </span><span class="n">déduplication</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">partition</span><span class="w"> </span><span class="n">possible</span>
+<span class="n">write_to_bigquery</span><span class="p">()</span><span class="w">  </span><span class="err">←</span><span class="w"> </span><span class="err">é</span><span class="n">criture</span><span class="w"> </span><span class="n">WRITE_APPEND</span><span class="p">,</span><span class="w"> </span><span class="n">déduplication</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">partition</span>
 </code></pre></div>
 
 <p>Ajouter une nouvelle source (TikTok, LinkedIn) = implémenter uniquement <code>extract()</code>.</p>
-<h3 id="2-architecture-medallion-bigquery">2. Architecture Medallion BigQuery<a class="headerlink" href="#2-architecture-medallion-bigquery" title="Permanent link">&para;</a></h3>
+<h3 id="2-architecture-medallion">2. Architecture Medallion<a class="headerlink" href="#2-architecture-medallion" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -800,7 +746,7 @@ Résultat : les équipes passent du temps à consolider des exports manuels, les
 <tbody>
 <tr>
 <td><code>mdp_raw</code></td>
-<td>Données brutes, audit complet</td>
+<td>Données brutes + audit</td>
 <td>Table partitionnée</td>
 </tr>
 <tr>
@@ -815,13 +761,12 @@ Résultat : les équipes passent du temps à consolider des exports manuels, les
 </tr>
 <tr>
 <td><code>mdp_marts</code></td>
-<td>KPI finaux, optimisés pour la BI</td>
+<td>KPI finaux, optimisés BI</td>
 <td>Table clusterisée</td>
 </tr>
 </tbody>
 </table>
-<h3 id="3-transformations-dbt">3. Transformations dbt<a class="headerlink" href="#3-transformations-dbt" title="Permanent link">&para;</a></h3>
-<p>KPI calculés avec <code>SAFE_DIVIDE</code> (jamais de division par zéro) :</p>
+<h3 id="3-kpi-dbt-safe_divide-jamais-de-division-par-zero">3. KPI dbt — <code>SAFE_DIVIDE</code> (jamais de division par zéro)<a class="headerlink" href="#3-kpi-dbt-safe_divide-jamais-de-division-par-zero" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -853,22 +798,22 @@ Résultat : les équipes passent du temps à consolider des exports manuels, les
 </tbody>
 </table>
 <p>Grain garanti : <strong>1 ligne = 1 campagne × 1 date × 1 plateforme</strong></p>
-<h3 id="4-qualite-des-donnees-36-tests-dbt">4. Qualité des données — 36 tests dbt<a class="headerlink" href="#4-qualite-des-donnees-36-tests-dbt" title="Permanent link">&para;</a></h3>
+<h3 id="4-qualite-36-tests-dbt">4. Qualité — 36 tests dbt<a class="headerlink" href="#4-qualite-36-tests-dbt" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>not_null</code> sur toutes les clés et métriques</li>
 <li><code>accepted_values</code> sur <code>platform</code></li>
 <li><code>unique_combination_of_columns</code> sur (report_date, campaign_id, platform)</li>
-<li>Tests SQL : CTR ≤ 100%, clicks ≤ impressions, métriques ≥ 0, formules KPI mathématiquement correctes</li>
+<li>Tests SQL : CTR ≤ 100%, clicks ≤ impressions, métriques ≥ 0</li>
 </ul>
 <h3 id="5-cicd-github-actions">5. CI/CD — GitHub Actions<a class="headerlink" href="#5-cicd-github-actions" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Lint Python (<code>pylint</code>) — fail si score &lt; 10/10</li>
 <li>Tests unitaires (<code>pytest</code>)</li>
-<li>Compilation et parsing dbt (sans credentials BigQuery)</li>
+<li>Compilation dbt (sans credentials BigQuery)</li>
 </ul>
 <hr />
-<h2 id="choix-technologiques-et-alternatives">Choix technologiques et alternatives<a class="headerlink" href="#choix-technologiques-et-alternatives" title="Permanent link">&para;</a></h2>
-<h3 id="ingestion-connecteur-python-custom-vs-outils-manages">Ingestion : connecteur Python custom vs outils managés<a class="headerlink" href="#ingestion-connecteur-python-custom-vs-outils-manages" title="Permanent link">&para;</a></h3>
+<h2 id="choix-techniques">Choix techniques<a class="headerlink" href="#choix-techniques" title="Permanent link">&para;</a></h2>
+<h3 id="ingestion-connecteur-custom-vs-outils-manages">Ingestion : connecteur custom vs outils managés<a class="headerlink" href="#ingestion-connecteur-custom-vs-outils-manages" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -881,62 +826,49 @@ Résultat : les équipes passent du temps à consolider des exports manuels, les
 <tr>
 <td><strong>Connecteur Python custom</strong> ← <em>ce projet</em></td>
 <td>Code maîtrisé</td>
-<td>Sources non supportées, apprentissage, contrôle total</td>
+<td>Apprentissage, contrôle total</td>
 </tr>
 <tr>
 <td><strong>Fivetran</strong></td>
 <td>SaaS managé</td>
-<td>En production, budget disponible, zéro maintenance, 300+ connecteurs</td>
+<td>Production, budget disponible, 300+ connecteurs</td>
 </tr>
 <tr>
 <td><strong>Airbyte</strong></td>
 <td>Open source</td>
-<td>Self-hosted, même richesse que Fivetran, coût infrastructure</td>
-</tr>
-<tr>
-<td><strong>Singer</strong></td>
-<td>Framework léger</td>
-<td>Connecteurs custom sans réinventer la roue</td>
+<td>Self-hosted, alternative Fivetran</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Pourquoi le custom ici ?</strong> Projet portfolio — comprendre ce que font ces outils sous le capot. En production réelle, Fivetran ou Airbyte seraient plus adaptés : maintenabilité, monitoring natif, gestion des schémas évolutifs.</p>
-<hr />
+<p>En production réelle, Fivetran ou Airbyte seraient préférables (maintenabilité, monitoring natif, gestion des schémas évolutifs).</p>
 <h3 id="transformation-pourquoi-dbt">Transformation : pourquoi dbt ?<a class="headerlink" href="#transformation-pourquoi-dbt" title="Permanent link">&para;</a></h3>
-<p>En entreprise, les transformations SQL vivent souvent dans des scripts éparpillés, sans tests, sans documentation, sans gestion des dépendances. Résultat : personne ne sait quel chiffre est "le bon".</p>
-<p>dbt résout ça :</p>
 <table>
 <thead>
 <tr>
-<th>Problème réel</th>
+<th>Problème</th>
 <th>Solution dbt</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>"Qui a modifié ce KPI ?"</td>
-<td>Tout est dans git, versionné</td>
-</tr>
-<tr>
-<td>"Ce chiffre est calculé comment ?"</td>
-<td>Lineage graph + documentation auto</td>
+<td>"Ce KPI est calculé comment ?"</td>
+<td>Lineage graph + doc auto</td>
 </tr>
 <tr>
 <td>"Les données sont-elles fiables ?"</td>
 <td>Tests automatiques à chaque run</td>
 </tr>
 <tr>
-<td>"Deux équipes ont deux définitions du CTR"</td>
-<td>Une seule source de vérité — le modèle dbt</td>
+<td>"Deux équipes, deux CTR différents"</td>
+<td>Une seule définition, versionnée dans git</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Alternatives :</strong>
-- <strong>SQL pur dans BigQuery</strong> → pas de gestion des dépendances, pas de tests, pas maintenable à l'échelle
-- <strong>Spark / Dataproc</strong> → justifié pour des volumes &gt; TB ou des transformations distribuées complexes
-- <strong>pandas</strong> → en mémoire, pour l'exploration ou les petits volumes</p>
-<hr />
-<h3 id="data-warehouse-pourquoi-bigquery">Data Warehouse : pourquoi BigQuery ?<a class="headerlink" href="#data-warehouse-pourquoi-bigquery" title="Permanent link">&para;</a></h3>
+- SQL pur dans BigQuery → pas de tests, pas de gestion des dépendances
+- Spark / Dataproc → justifié pour des volumes &gt; TB
+- pandas → en mémoire, pour l'exploration</p>
+<h3 id="data-warehouse-pourquoi-bigquery">Data warehouse : pourquoi BigQuery ?<a class="headerlink" href="#data-warehouse-pourquoi-bigquery" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -948,46 +880,33 @@ Résultat : les équipes passent du temps à consolider des exports manuels, les
 </thead>
 <tbody>
 <tr>
-<td><strong>Modèle de prix</strong></td>
-<td>Pay-per-query (idéal projet)</td>
-<td>Pay-per-compute (crédits)</td>
-<td>Instance toujours allumée</td>
+<td>Prix</td>
+<td>Pay-per-query</td>
+<td>Pay-per-compute</td>
+<td>Instance permanente</td>
 </tr>
 <tr>
-<td><strong>Scalabilité</strong></td>
-<td>Serverless, auto</td>
+<td>Scalabilité</td>
+<td>Serverless</td>
 <td>Serverless</td>
 <td>Nœuds à gérer</td>
 </tr>
 <tr>
-<td><strong>Intégration GCP</strong></td>
-<td>Native</td>
-<td>Via connecteurs</td>
-<td>AWS natif</td>
-</tr>
-<tr>
-<td><strong>SQL</strong></td>
-<td>Standard SQL</td>
-<td>Standard SQL</td>
+<td>SQL</td>
+<td>Standard</td>
+<td>Standard</td>
 <td>PostgreSQL-like</td>
-</tr>
-<tr>
-<td><strong>Cas d'usage</strong></td>
-<td>Analytique, grands volumes</td>
-<td>Analytique, multi-cloud</td>
-<td>AWS natif</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Pourquoi BigQuery ici ?</strong> Compte GCP disponible, pricing adapté à un projet portfolio (paiement à la requête, pas d'instance permanente), intégration native avec Looker Studio.</p>
-<p><strong>Ce projet est transférable à Snowflake ou Redshift</strong> : le code dbt est portable — changer le profil <code>profiles.yml</code> suffit. La logique SQL ne change pas.</p>
+<p>Le code dbt est portable : changer <code>profiles.yml</code> suffit pour migrer sur Snowflake ou Redshift.</p>
 <hr />
-<h2 id="points-techniques-notables">Points techniques notables<a class="headerlink" href="#points-techniques-notables" title="Permanent link">&para;</a></h2>
+<h2 id="points-notables">Points notables<a class="headerlink" href="#points-notables" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Idempotence</strong> : pipeline rejouable sans créer de doublons — <code>extract_run_id</code> tracent chaque run</li>
-<li><strong>Traçabilité</strong> : chaque ligne porte un <code>extract_run_id</code> (UUID) liant la donnée à son run d'ingestion</li>
-<li><strong>Schéma cross-platform</strong> : <code>campaign_id</code> casté en STRING (Google = string, Meta = entier) pour que le <code>UNION ALL</code> fonctionne</li>
-<li><strong>Valeurs manquantes gérées</strong> : <code>conversions</code> null pour Meta (non fourni par l'API) — KPI CPA/ROAS null pour Meta, ce qui est correct</li>
+<li><strong>Idempotence</strong> : pipeline rejouable sans doublons — <code>extract_run_id</code> trace chaque run</li>
+<li><strong>Traçabilité</strong> : chaque ligne porte un UUID liant la donnée à son run d'ingestion</li>
+<li><strong>Schéma cross-platform</strong> : <code>campaign_id</code> casté en STRING (Google = string, Meta = entier) pour le <code>UNION ALL</code></li>
+<li><strong>Valeurs manquantes</strong> : <code>conversions</code> null pour Meta (non fourni par l'API) → CPA/ROAS null pour Meta, ce qui est correct</li>
 </ul>
 <hr />
 <h2 id="repo">Repo<a class="headerlink" href="#repo" title="Permanent link">&para;</a></h2>
