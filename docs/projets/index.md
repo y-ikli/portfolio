@@ -10,6 +10,6 @@ Pipeline ELT unifiant Meta Ads et Google Ads dans BigQuery — normalisation des
 
 ## [MonCapitain](moncapitain.md)
 
-RAG local pour l'analyse de corpus documentaires scientifiques — questions en langage naturel sur des documents internes, réponses ancrées dans les sources, avec intégration d'outils chimio-informatiques (RDKit).
+RAG 100% local pour équipes biotech — interrogation de corpus documentaires scientifiques en langage naturel, réponses ancrées dans les sources, sans envoyer de données sensibles vers le cloud.
 
 **Stack :** Python · LangChain · Ollama · RDKit

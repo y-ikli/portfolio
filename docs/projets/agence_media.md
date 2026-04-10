@@ -4,6 +4,8 @@
 
 > **Stack :** Python · BigQuery ·dbt · GitHub Actions
 
+**Repo :** [github.com/y-ikli/media-data-platform](https://github.com/y-ikli/media-data-platform)
+
 ---
 
 ## Contexte
@@ -55,21 +57,21 @@ Meta Ads API (réelle)          Google Ads (simulé)
 
 ## Aperçu
 
-### BigQuery — architecture Medallion
+### BigQuery — Datasets
 
 ![BigQuery datasets](../images_projets/agence_media/bigquery_datasets.png)
 *4 datasets avec responsabilités distinctes : raw → staging → intermediate → marts.*
 
 ---
 
-### BigQuery — table finale
+### BigQuery — Table finale
 
 ![BigQuery mart_campaign_daily](../images_projets/agence_media/bigquery_mart.png)
 *`mart_campaign_daily` : ~4 700 lignes, KPI calculés, données Meta + Google unifiées.*
 
 ---
 
-### dbt — run et tests
+### dbt — Run & Tests
 
 ![dbt run results](../images_projets/agence_media/dbt_run.png)
 ![dbt test results](../images_projets/agence_media/dbt_test.png)
@@ -77,12 +79,12 @@ Meta Ads API (réelle)          Google Ads (simulé)
 
 ---
 
-### dbt — lineage
+### dbt — Lineage
 
 ![Lineage dbt](../images_projets/agence_media/lineage.png)
 *Sources → staging → intermediate → marts. Traçabilité end-to-end.*
 
-### dbt — documentation
+### dbt — Documentation
 
 ![Documentation dbt](../images_projets/agence_media/dbt_serve.png)
 
@@ -90,7 +92,7 @@ Meta Ads API (réelle)          Google Ads (simulé)
 
 ## Détail technique
 
-### 1. Ingestion Python — pattern Strategy
+### 1. Ingestion Python
 
 Classe abstraite `DataSourceConnector` avec 3 étapes :
 
@@ -102,7 +104,7 @@ write_to_bigquery()  ← écriture WRITE_APPEND, déduplication par partition
 
 Ajouter une nouvelle source (TikTok, LinkedIn) = implémenter uniquement `extract()`.
 
-### 2. Architecture Medallion
+### 2. BigQuery — Architecture Medallion
 
 | Dataset | Rôle | Type |
 |---------|------|------|
@@ -111,7 +113,7 @@ Ajouter une nouvelle source (TikTok, LinkedIn) = implémenter uniquement `extrac
 | `mdp_intermediate` | Union des sources, schéma commun | Vue dbt |
 | `mdp_marts` | KPI finaux, optimisés BI | Table clusterisée |
 
-### 3. KPI dbt — `SAFE_DIVIDE` (jamais de division par zéro)
+### 3. KPI dbt
 
 | KPI | Formule |
 |-----|---------|
@@ -123,7 +125,7 @@ Ajouter une nouvelle source (TikTok, LinkedIn) = implémenter uniquement `extrac
 
 Grain garanti : **1 ligne = 1 campagne × 1 date × 1 plateforme**
 
-### 4. Qualité — 36 tests dbt
+### 4. Qualité des données
 
 - `not_null` sur toutes les clés et métriques
 - `accepted_values` sur `platform`
@@ -140,7 +142,7 @@ Grain garanti : **1 ligne = 1 campagne × 1 date × 1 plateforme**
 
 ## Choix techniques
 
-### Ingestion : connecteur custom vs outils managés
+### Ingestion
 
 | Outil | Type | Quand l'utiliser |
 |-------|------|-----------------|
@@ -150,7 +152,7 @@ Grain garanti : **1 ligne = 1 campagne × 1 date × 1 plateforme**
 
 En production réelle, Fivetran ou Airbyte seraient préférables (maintenabilité, monitoring natif, gestion des schémas évolutifs).
 
-### Transformation : pourquoi dbt ?
+### Transformation
 
 | Problème | Solution dbt |
 |----------|-------------|
@@ -159,11 +161,12 @@ En production réelle, Fivetran ou Airbyte seraient préférables (maintenabilit
 | "Deux équipes, deux CTR différents" | Une seule définition, versionnée dans git |
 
 **Alternatives :**
-- SQL pur dans BigQuery → pas de tests, pas de gestion des dépendances
-- Spark / Dataproc → justifié pour des volumes > TB
-- pandas → en mémoire, pour l'exploration
 
-### Data warehouse : pourquoi BigQuery ?
+- SQL pur dans BigQuery → pas de tests, pas de gestion des dépendances.
+- Spark / Dataproc → justifié pour des volumes > TB.
+- pandas → en mémoire, pour l'exploration.
+
+### Data Warehouse
 
 | Critère | BigQuery | Snowflake | Redshift |
 |---------|----------|-----------|---------|
@@ -177,13 +180,10 @@ Le code dbt est portable : changer `profiles.yml` suffit pour migrer sur Snowfla
 
 ## Points notables
 
-- **Idempotence** : pipeline rejouable sans doublons — `extract_run_id` trace chaque run
-- **Traçabilité** : chaque ligne porte un UUID liant la donnée à son run d'ingestion
-- **Schéma cross-platform** : `campaign_id` casté en STRING (Google = string, Meta = entier) pour le `UNION ALL`
-- **Valeurs manquantes** : `conversions` null pour Meta (non fourni par l'API) → CPA/ROAS null pour Meta, ce qui est correct
+- **Idempotence** : pipeline rejouable sans doublons — `extract_run_id` trace chaque run.
+- **Traçabilité** : chaque ligne porte un UUID liant la donnée à son run d'ingestion.
+- **Schéma cross-platform** : `campaign_id` casté en STRING (Google = string, Meta = entier) pour le `UNION ALL`.
+- **Valeurs manquantes** : `conversions` null pour Meta (non fourni par l'API) → CPA/ROAS null pour Meta, ce qui est correct.
 
 ---
 
-## Repo
-
-[github.com/y-ikli/media-data-platform](https://github.com/y-ikli/media-data-platform)
