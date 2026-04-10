@@ -16,7 +16,7 @@
         <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
       </a>
     </p>
-    <p style="margin: 0; color: #555; font-size: 0.95em;">Disponible dès mai 2026</p>
+    <p style="margin: 0; color: #555; font-size: 0.95em;"><strong>Disponible dès mai 2026</strong></p>
     <p style="margin: 0.3rem 0 0; color: #555; font-size: 0.95em;">Mobilité : Lille · Paris · France</p>
   </div>
 </div>
@@ -32,6 +32,8 @@ Habitué à travailler en autonomie sur des projets transverses, je m'appuie sur
 Mon expérience est ancrée dans le secteur santé, mais les problématiques adressées — fiabilité des données, orchestration, modélisation analytique — sont pleinement transférables à d'autres secteurs. **[Voir les projets réalisés →](./projets/index.md)**
 
 ---
+
+## Postes visés
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0; align-items: stretch;">
 
@@ -61,7 +63,6 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
         </ul>
       </div>
     </div>
-    <div style="border-top: 1px solid rgba(25,118,210,0.15); padding: 0.6rem 1.4rem; font-size: 0.75em; color: #90a4ae; letter-spacing: 0.03em;">Basé sur 3 ans d'expérience · Disponible dès mai 2026</div>
   </div>
 
   <!-- CARD 2 : Analytics Engineer -->
@@ -88,10 +89,11 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
         </li>
       </ul>
     </div>
-    <div style="border-top: 1px solid rgba(67,160,71,0.15); padding: 0.6rem 1.4rem; font-size: 0.75em; color: #90a4ae; letter-spacing: 0.03em;">Basé sur 3 ans d'expérience · Disponible dès mai 2026</div>
   </div>
 
 </div>
+
+## Stack technique
 
 <div style="margin: 0.5rem 0 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.6rem;">
 
@@ -193,7 +195,7 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
 
 ---
 
-## Engagements
+## Bénévolats & Associations
 
 - **Membre du Conseil de Développement de la MEL — France** *(Métropole Européenne de Lille)* — participation aux orientations stratégiques du territoire. · *depuis 2025*
 - **Conseiller (ex-président) de l'association ALIS — Maroc** *(promotion du logiciel libre, open source et Linux)* · *depuis 2008*

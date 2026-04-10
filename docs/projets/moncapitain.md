@@ -48,7 +48,7 @@ Dans les équipes biotech, les documents internes (rapports, articles, fiches te
 - Recherche vectorielle par similarité sémantique.
 - Génération de réponses avec citation des sources.
 - Choix du modèle LLM via Ollama.
-- Module chimio-informatique : similarité moléculaire, visualisation SMILES — via RDKit.
+- Module chimio-informatique : similarité moléculaire, visualisation SMILES.
 - Architecture modulaire — nouveaux modules ajoutables sans refonte.
 
 ---
