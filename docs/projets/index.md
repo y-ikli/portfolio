@@ -12,4 +12,4 @@ Pipeline ELT unifiant Meta Ads et Google Ads dans BigQuery — normalisation des
 
 RAG 100% local pour équipes biotech — interrogation de corpus documentaires scientifiques en langage naturel, réponses ancrées dans les sources, sans envoyer de données sensibles vers le cloud.
 
-**Stack :** Python · LangChain · Ollama · RDKit
+**Stack :** Python · LangChain · LangGraph · Ollama · Qdrant · RDKit

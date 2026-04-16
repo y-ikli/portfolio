@@ -2,7 +2,7 @@
 
 **Système RAG 100% local** pour interroger un corpus documentaire scientifique en langage naturel — conçu pour les équipes biotech, aucune donnée ne quitte la machine.
 
-> **Stack :** Python · FastAPI · Ollama · Qdrant · RDKit
+> **Stack :** Python · LangChain · LangGraph · Ollama · Qdrant · RDKit
 
 ---
 
@@ -26,13 +26,19 @@ Dans les équipes biotech, les documents internes (rapports, articles, fiches te
   (overlap, métadonnées par chunk)
         │
         ▼
-  Embeddings → Vectorstore local
+  Embeddings → Vectorstore local (Qdrant)
         │
         ▼
-  Retrieval sémantique
+  LangGraph Agent
+  ┌─────────────────────────────────┐
+  │  Retrieval sémantique           │
+  │  + LangChain Tools :            │
+  │    · RDKit (similarité SMILES,  │
+  │      Tanimoto, visualisation)   │
+  └─────────────────────────────────┘
         │
         ▼
-  LLM local
+  LLM local (Ollama)
   (réponse + citation des sources)
         │
         ▼
@@ -48,7 +54,7 @@ Dans les équipes biotech, les documents internes (rapports, articles, fiches te
 - Recherche vectorielle par similarité sémantique.
 - Génération de réponses avec citation des sources.
 - Choix du modèle LLM via Ollama.
-- Module chimio-informatique : similarité moléculaire, visualisation SMILES.
+- **RDKit intégré comme LangChain Tool** — l'agent peut appeler directement les fonctions chimio-informatiques (similarité moléculaire Tanimoto, visualisation SMILES) en réponse aux questions de l'utilisateur.
 - Architecture modulaire — nouveaux modules ajoutables sans refonte.
 
 ---

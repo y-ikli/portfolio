@@ -91,6 +91,34 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
     </div>
   </div>
 
+  <!-- CARD 3 : AI Engineer -->
+  <div style="flex: 1 1 300px; border: 1px solid #7c3aed; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 12px rgba(124,58,237,0.10); display: flex; flex-direction: column;">
+    <div style="background: #7c3aed; padding: 1.1rem 1.4rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 0.8rem;">
+      <div>
+        <div style="color: #fff; font-size: 1.18em; font-weight: 700; line-height: 1.2;">AI Engineer</div>
+      </div>
+    </div>
+    <div style="padding: 1.2rem 1.4rem; flex: 1; display: flex; flex-direction: column; gap: 1.1rem;">
+      <div>
+        <div style="font-size: 0.78em; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: #7c3aed; margin-bottom: 0.6rem;">Missions</div>
+        <ul style="margin: 0; list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.45rem;">
+          <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
+            <span style="color: #7c3aed; font-weight: 700; flex-shrink: 0;">&#8250;</span>
+            <span>Concevoir et déployer des <strong>systèmes RAG et agents LLM</strong> — retrieval sémantique, orchestration de chaînes et gestion du contexte.</span>
+          </li>
+          <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
+            <span style="color: #7c3aed; font-weight: 700; flex-shrink: 0;">&#8250;</span>
+            <span>Intégrer des <strong>bases vectorielles et modèles de langage</strong> dans des pipelines data existants — local ou cloud, confidentiel ou ouvert.</span>
+          </li>
+          <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
+            <span style="color: #7c3aed; font-weight: 700; flex-shrink: 0;">&#8250;</span>
+            <span>Industrialiser des applications IA — <strong>évaluation, observabilité et mise en production</strong> de bout en bout.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 ## Stack technique
@@ -137,6 +165,17 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
     <div style="font-size: 0.7em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #9c27b0; margin-bottom: 0.5rem;">Visualisation & Reporting</div>
     <div style="display: flex; flex-direction: column; gap: 0.25rem;">
       <span style="font-size: 0.88em; color: #6a1b9a; font-weight: 600;">Looker Studio</span>
+    </div>
+  </div>
+
+  <div style="background: rgba(124,58,237,0.07); border-radius: 8px; padding: 0.7rem 1rem;">
+    <div style="font-size: 0.7em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #7c3aed; margin-bottom: 0.5rem;">IA & LLM</div>
+    <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+      <span style="font-size: 0.88em; color: #5b21b6; font-weight: 600;">RAG</span>
+      <span style="font-size: 0.88em; color: #5b21b6; font-weight: 600;">LangChain</span>
+      <span style="font-size: 0.88em; color: #5b21b6; font-weight: 600;">LangGraph</span>
+      <span style="font-size: 0.88em; color: #5b21b6; font-weight: 600;">Base vectorielle</span>
+      <span style="font-size: 0.88em; color: #5b21b6; font-weight: 600;">LLM</span>
     </div>
   </div>
 
