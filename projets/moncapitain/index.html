@@ -702,7 +702,7 @@
 <h1 id="moncapitain">MonCapitain<a class="headerlink" href="#moncapitain" title="Permanent link">&para;</a></h1>
 <p><strong>Système RAG 100% local</strong> pour interroger un corpus documentaire scientifique en langage naturel — conçu pour les équipes biotech, aucune donnée ne quitte la machine.</p>
 <blockquote>
-<p><strong>Stack :</strong> Python · FastAPI · Ollama · Qdrant · RDKit</p>
+<p><strong>Stack :</strong> Python · LangChain · LangGraph · Ollama · Qdrant · RDKit</p>
 </blockquote>
 <hr />
 <h2 id="contexte">Contexte<a class="headerlink" href="#contexte" title="Permanent link">&para;</a></h2>
@@ -718,13 +718,19 @@
   (overlap, métadonnées par chunk)
         │
         ▼
-  Embeddings → Vectorstore local
+  Embeddings → Vectorstore local (Qdrant)
         │
         ▼
-  Retrieval sémantique
+  LangGraph Agent
+  ┌─────────────────────────────────┐
+  │  Retrieval sémantique           │
+  │  + LangChain Tools :            │
+  │    · RDKit (similarité SMILES,  │
+  │      Tanimoto, visualisation)   │
+  └─────────────────────────────────┘
         │
         ▼
-  LLM local
+  LLM local (Ollama)
   (réponse + citation des sources)
         │
         ▼
@@ -739,7 +745,7 @@
 <li>Recherche vectorielle par similarité sémantique.</li>
 <li>Génération de réponses avec citation des sources.</li>
 <li>Choix du modèle LLM via Ollama.</li>
-<li>Module chimio-informatique : similarité moléculaire, visualisation SMILES.</li>
+<li><strong>RDKit intégré comme LangChain Tool</strong> — l'agent peut appeler directement les fonctions chimio-informatiques (similarité moléculaire Tanimoto, visualisation SMILES) en réponse aux questions de l'utilisateur.</li>
 <li>Architecture modulaire — nouveaux modules ajoutables sans refonte.</li>
 </ul>
 <hr />
