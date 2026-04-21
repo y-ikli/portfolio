@@ -1190,7 +1190,7 @@
 </ul>
 <h3 id="5-cicd-github-actions">5. CI/CD — GitHub Actions<a class="headerlink" href="#5-cicd-github-actions" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Lint Python (<code>pylint</code>) — fail si score &lt; 10/10</li>
+<li>Lint Python (<code>pylint</code>)</li>
 <li>Tests unitaires (<code>pytest</code>)</li>
 <li>Compilation dbt (sans credentials BigQuery)</li>
 </ul>
@@ -1254,36 +1254,6 @@
 <li>pandas → en mémoire, pour l'exploration.</li>
 </ul>
 <h3 id="data-warehouse">Data Warehouse<a class="headerlink" href="#data-warehouse" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Critère</th>
-<th>BigQuery</th>
-<th>Snowflake</th>
-<th>Redshift</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Prix</td>
-<td>Pay-per-query</td>
-<td>Pay-per-compute</td>
-<td>Instance permanente</td>
-</tr>
-<tr>
-<td>Scalabilité</td>
-<td>Serverless</td>
-<td>Serverless</td>
-<td>Nœuds à gérer</td>
-</tr>
-<tr>
-<td>SQL</td>
-<td>Standard</td>
-<td>Standard</td>
-<td>PostgreSQL-like</td>
-</tr>
-</tbody>
-</table>
 <p>Le code dbt est portable : changer <code>profiles.yml</code> suffit pour migrer sur Snowflake ou Redshift.</p>
 <hr />
 <h2 id="points-notables">Points notables<a class="headerlink" href="#points-notables" title="Permanent link">&para;</a></h2>
