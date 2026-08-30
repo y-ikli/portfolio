@@ -8,28 +8,26 @@
       
       
       
-        <link rel="canonical" href="https://y-ikli.github.io/portfolio/projets/agence_media/">
+        <link rel="canonical" href="https://y-ikli.github.io/portfolio/projets/media_data_platform/">
       
       
         <link rel="prev" href="../">
       
-      
-        <link rel="next" href="../moncapitain/">
       
       
         
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Agence Média - Portfolio</title>
+        <title>Media Data Platform - Portfolio</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#marketing-data-platform" class="md-skip">
+        <a href="#media-data-platform" class="md-skip">
           Aller au contenu
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Agence Média
+              Media Data Platform
             
           </span>
         </div>
@@ -416,7 +414,7 @@
   <span class="md-ellipsis">
     
   
-    Agence Média
+    Media Data Platform
   
 
     
@@ -434,7 +432,7 @@
   <span class="md-ellipsis">
     
   
-    Agence Média
+    Media Data Platform
   
 
     
@@ -701,34 +699,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../moncapitain/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MonCapitain
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1022,15 +992,15 @@
 
 
 
-<h1 id="marketing-data-platform">Marketing Data Platform<a class="headerlink" href="#marketing-data-platform" title="Permanent link">&para;</a></h1>
-<p><strong>Pipeline ELT publicitaire</strong> — Meta Ads (API réelle) + Google Ads — vers des data marts analytiques dans BigQuery, avec transformations dbt et validation qualité automatisée.</p>
+<h1 id="media-data-platform">Media Data Platform<a class="headerlink" href="#media-data-platform" title="Permanent link">&para;</a></h1>
+<p><strong>Pipeline ELT publicitaire</strong> — Meta Ads (API réelle) + Google Ads (données simulées) — vers des data marts analytiques dans BigQuery, avec transformations dbt et validation qualité automatisée.</p>
 <blockquote>
 <p><strong>Stack :</strong> Python · BigQuery · dbt · GitHub Actions</p>
 </blockquote>
 <p><strong>Repo :</strong> <a href="https://github.com/y-ikli/media-data-platform">github.com/y-ikli/media-data-platform</a></p>
 <hr />
 <h2 id="contexte">Contexte<a class="headerlink" href="#contexte" title="Permanent link">&para;</a></h2>
-<p>Une agence marketing gère des campagnes sur Meta et Google simultanément. Chaque plateforme expose ses données dans son propre format : nommages différents, métriques incohérentes, exports manuels.</p>
+<p>Une équipe marketing pilote des campagnes publicitaires sur plusieurs plateformes (Meta, Google) simultanément. Chaque plateforme expose ses données dans son propre format : nommages différents, métriques incohérentes, exports manuels.</p>
 <p><strong>Problème concret :</strong> le CTR n'est pas calculé de la même façon selon la source. Comparer Meta et Google sur les mêmes campagnes et les mêmes dates devient impossible sans un socle normalisé.</p>
 <p><strong>Solution :</strong> un pipeline ELT qui unifie les deux sources en une seule table analytique, avec une définition unique de chaque KPI.</p>
 <hr />
@@ -1090,23 +1060,23 @@
 <hr />
 <h2 id="apercu">Aperçu<a class="headerlink" href="#apercu" title="Permanent link">&para;</a></h2>
 <h3 id="bigquery-datasets">BigQuery — Datasets<a class="headerlink" href="#bigquery-datasets" title="Permanent link">&para;</a></h3>
-<p><img alt="BigQuery datasets" src="../../images_projets/agence_media/bigquery_datasets.png" />
+<p><img alt="BigQuery datasets" src="../../images_projets/media_data_platform/bigquery_datasets.png" />
 <em>4 datasets avec responsabilités distinctes : raw → staging → intermediate → marts.</em></p>
 <hr />
 <h3 id="bigquery-table-finale">BigQuery — Table finale<a class="headerlink" href="#bigquery-table-finale" title="Permanent link">&para;</a></h3>
-<p><img alt="BigQuery mart_campaign_daily" src="../../images_projets/agence_media/bigquery_mart.png" />
+<p><img alt="BigQuery mart_campaign_daily" src="../../images_projets/media_data_platform/bigquery_mart.png" />
 <em><code>mart_campaign_daily</code> : ~4 700 lignes, KPI calculés, données Meta + Google unifiées.</em></p>
 <hr />
 <h3 id="dbt-run-tests">dbt — Run &amp; Tests<a class="headerlink" href="#dbt-run-tests" title="Permanent link">&para;</a></h3>
-<p><img alt="dbt run results" src="../../images_projets/agence_media/dbt_run.png" />
-<img alt="dbt test results" src="../../images_projets/agence_media/dbt_test.png" />
+<p><img alt="dbt run results" src="../../images_projets/media_data_platform/dbt_run.png" />
+<img alt="dbt test results" src="../../images_projets/media_data_platform/dbt_test.png" />
 <em>4 modèles PASS · 36 tests PASS · aucun warning.</em></p>
 <hr />
 <h3 id="dbt-lineage">dbt — Lineage<a class="headerlink" href="#dbt-lineage" title="Permanent link">&para;</a></h3>
-<p><img alt="Lineage dbt" src="../../images_projets/agence_media/lineage.png" />
+<p><img alt="Lineage dbt" src="../../images_projets/media_data_platform/lineage.png" />
 <em>Sources → staging → intermediate → marts. Traçabilité end-to-end.</em></p>
 <h3 id="dbt-documentation">dbt — Documentation<a class="headerlink" href="#dbt-documentation" title="Permanent link">&para;</a></h3>
-<p><img alt="Documentation dbt" src="../../images_projets/agence_media/dbt_serve.png" /></p>
+<p><img alt="Documentation dbt" src="../../images_projets/media_data_platform/dbt_serve.png" /></p>
 <hr />
 <h2 id="detail-technique">Détail technique<a class="headerlink" href="#detail-technique" title="Permanent link">&para;</a></h2>
 <h3 id="1-ingestion-python">1. Ingestion Python<a class="headerlink" href="#1-ingestion-python" title="Permanent link">&para;</a></h3>
@@ -1322,7 +1292,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../open_external_newtab.js"></script>
       
