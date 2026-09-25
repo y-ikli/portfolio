@@ -64,11 +64,13 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
   </div>
 
   <div style="background: rgba(55,71,79,0.06); border-radius: 8px; padding: 0.7rem 1rem;">
-    <div style="font-size: 0.7em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #37474f; margin-bottom: 0.5rem;">Infrastructure & CI/CD</div>
+    <div style="font-size: 0.7em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #37474f; margin-bottom: 0.5rem;">DevOps</div>
     <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+      <span style="font-size: 0.88em; color: #263238; font-weight: 600;">Terraform</span>
       <span style="font-size: 0.88em; color: #263238; font-weight: 600;">Docker</span>
       <span style="font-size: 0.88em; color: #263238; font-weight: 600;">GitHub Actions</span>
       <span style="font-size: 0.88em; color: #263238; font-weight: 600;">GitLab CI</span>
+      <span style="font-size: 0.88em; color: #263238; font-weight: 600;">Git</span>
     </div>
   </div>
 
@@ -76,6 +78,7 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
     <div style="font-size: 0.7em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #9c27b0; margin-bottom: 0.5rem;">Visualisation & Reporting</div>
     <div style="display: flex; flex-direction: column; gap: 0.25rem;">
       <span style="font-size: 0.88em; color: #6a1b9a; font-weight: 600;">Looker Studio</span>
+      <span style="font-size: 0.88em; color: #6a1b9a; font-weight: 600;">Apache Superset</span>
     </div>
   </div>
 
