@@ -62,20 +62,28 @@ Meta Ads API (réelle)          Google Ads (simulé)
 ![BigQuery datasets](../images_projets/agence_media/bigquery_datasets.png)
 *4 datasets avec responsabilités distinctes : raw → staging → intermediate → marts.*
 
+> Capture antérieure à la refonte du chargement idempotent ; à reprendre une fois l'infrastructure appliquée sur un projet GCP réel.
+
 ---
 
 ### BigQuery — Table finale
 
 ![BigQuery mart_campaign_daily](../images_projets/agence_media/bigquery_mart.png)
-*`mart_campaign_daily` : ~4 700 lignes, KPI calculés, données Meta + Google unifiées.*
+*`mart_campaign_daily` : KPI calculés, données Meta + Google unifiées.*
+
+> Même limite : capture à refaire sur BigQuery une fois l'infrastructure appliquée.
 
 ---
 
 ### dbt — Run & Tests
 
-![dbt run results](../images_projets/agence_media/dbt_run.png)
-![dbt test results](../images_projets/agence_media/dbt_test.png)
-*4 modèles PASS · 36 tests PASS · aucun warning.*
+Exécution réelle sur DuckDB (mêmes modèles et tests que sur BigQuery), après la refonte du chargement idempotent :
+
+```
+Finished running 1 incremental model, 2 table models, 47 data tests, 4 unit tests, 3 view models
+Completed successfully
+Done. PASS=57 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=57
+```
 
 ---
 
@@ -87,6 +95,7 @@ Meta Ads API (réelle)          Google Ads (simulé)
 ### dbt — Documentation
 
 ![Documentation dbt](../images_projets/agence_media/dbt_serve.png)
+*Documentation générée automatiquement (`dbt docs generate`), sans compte cloud : colonnes, description, tests, relation cible.*
 
 ---
 
