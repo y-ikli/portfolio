@@ -143,8 +143,6 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
 **Master MEEF** *(pédagogie du numérique et informatique)* — Université de Lille · 2021  
 **Licence Mathématiques & Informatique** *(génie logiciel)* — Université Ibn Zohr · 2015
 
-> Le Master MEEF ancre une vraie compétence de transmission : vulgariser des concepts techniques, structurer des explications, accompagner des équipes métier non-techniques dans la prise en main des outils data.
-
 ---
 
 ## Bénévolats & Associations
