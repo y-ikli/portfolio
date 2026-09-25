@@ -32,40 +32,6 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
 
 ---
 
-## Postes visés
-
-<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0; align-items: stretch;">
-
-  <!-- CARD 1 : Data Engineer -->
-  <div style="flex: 1 1 300px; border: 1px solid #1976d2; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 12px rgba(25,118,210,0.10); display: flex; flex-direction: column;">
-    <div style="background: #1976d2; padding: 1.1rem 1.4rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 0.8rem;">
-      <div>
-        <div style="color: #fff; font-size: 1.18em; font-weight: 700; line-height: 1.2;">Data Engineer</div>
-      </div>
-    </div>
-    <div style="padding: 1.2rem 1.4rem; flex: 1; display: flex; flex-direction: column; gap: 1.1rem;">
-      <div>
-        <div style="font-size: 0.78em; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: #1976d2; margin-bottom: 0.6rem;">Missions</div>
-        <ul style="margin: 0; list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.45rem;">
-          <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
-            <span style="color: #1976d2; font-weight: 700; flex-shrink: 0;">&#8250;</span>
-            <span>Concevoir et industrialiser des <strong>pipelines ELT multi-sources</strong> — fiables, testés, conteneurisés et maintenables par les équipes métier.</span>
-          </li>
-          <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
-            <span style="color: #1976d2; font-weight: 700; flex-shrink: 0;">&#8250;</span>
-            <span>Traiter des données complexes et hétérogènes — normalisation, déduplication, enrichissement, logique <strong>MDM</strong>.</span>
-          </li>
-          <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
-            <span style="color: #1976d2; font-weight: 700; flex-shrink: 0;">&#8250;</span>
-            <span>Intégrer <strong>qualité et observabilité</strong> dès la conception — tests automatisés, CI/CD, versioning, documentation.</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-</div>
-
 ## Stack technique
 
 <div style="margin: 0.5rem 0 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.6rem;">
