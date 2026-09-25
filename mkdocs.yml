@@ -9,7 +9,8 @@ nav:
   - Projets:
     - 'Mes Projets': projets/index.md
     - Agence Média: projets/agence_media.md
-    - MonCapitain: projets/moncapitain.md
+    - MolScout: projets/molscout.md
+    - MEL WasteWatch: projets/mel_wastewatch.md
 
 theme:
   name: material
