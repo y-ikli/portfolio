@@ -16,7 +16,7 @@
         <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
       </a>
     </p>
-    <p style="margin: 0; color: #555; font-size: 0.95em;"><strong>Disponible dès mai 2026</strong></p>
+    <p style="margin: 0; color: #555; font-size: 0.95em;"><strong>Disponible immédiatement</strong></p>
   </div>
 </div>
 
@@ -106,7 +106,7 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
       <strong>INRIA — Data Engineer (CDD)</strong>
       <span style="color: #888; font-size: 0.9em;">Lille · Sept. 2024 – Avr. 2026</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Pipelines de transformation et tests d'interopérabilité pour une plateforme data distribuée déployée dans 3 hôpitaux européens pilotes. Code modulaire, conteneurisé et versionné — déploiement autonome par chaque entité.</p>
+    <p style="margin: 0.5rem 0 0;">Plateforme data de recherche clinique déployée on-premise dans 3 hôpitaux européens (architecture fédérée), avec environnement de tests/CI-CD sur GCP. Conception et mise en production de la plateforme end-to-end : pipelines de transformation (Python, dbt, Airflow, Docker), de l'ingestion brute aux modèles analytiques exposés. Suite de tests automatisés et CI/CD GitLab permettant à chaque hôpital de déployer en autonomie ; documentation d'architecture (MkDocs).</p>
   </div>
 
   <div style="border-left: 3px solid #fb8c00; padding: 0.8rem 1.2rem; background: rgba(251,140,0,0.03); border-radius: 0 6px 6px 0;">
@@ -114,7 +114,7 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
       <strong>APTEEUS — Data Engineer (Stage)</strong>
       <span style="color: #888; font-size: 0.9em;">Lille · Jan. – Juil. 2023</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Seul profil technique sur le projet : pipelines de matching / merging pour dédupliquer, normaliser et enrichir une chimiothèque interne par croisement avec des bases externes — logique <strong>Master Data Management</strong>.</p>
+    <p style="margin: 0.5rem 0 0;">Chimiothèque interne alimentée par plusieurs sources externes. Seul profil technique du projet : construction d'un pipeline <strong>MDM</strong> pour dédupliquer et enrichir la base de composés (bases moléculaires, chimiothèques), normalisation, contrôles qualité end-to-end. Décisions d'architecture validées en comité avec les équipes métier ; documentation et accompagnement à l'usage de la base.</p>
   </div>
 
   <div style="border-left: 3px solid #43a047; padding: 0.8rem 1.2rem; background: rgba(67,160,71,0.03); border-radius: 0 6px 6px 0;">
@@ -122,16 +122,15 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
       <strong>Alicante (OSPI) — Analytics Engineer (Stage)</strong>
       <span style="color: #888; font-size: 0.9em;">Lille · Avr. – Août 2022</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Transformation de données hospitalières en tables analytiques et calcul de KPIs métier. Industrialisation de rapports reproductibles multi-formats déployés pour chaque client.</p>
+    <p style="margin: 0.5rem 0 0;">Projet de valorisation de la donnée pour un groupe hospitalier multi-établissements. Industrialisation et automatisation de flux de données en tables analytiques et rapports paramétrables, avec calcul d'indicateurs de pilotage (KPIs) pour le reporting métier de chaque établissement.</p>
   </div>
 
   <div style="border-left: 3px solid #9c27b0; padding: 0.8rem 1.2rem; background: rgba(156,39,176,0.03); border-radius: 0 6px 6px 0;">
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.3rem;">
-      <strong>Projet professionnel de Master 2 Data Science — CHU Lille &amp; CIC</strong>
-      <span style="color: #888; font-size: 0.9em;">Sept. 2022 – Juin 2023</span>
+      <strong>Formateur</strong>
+      <span style="color: #888; font-size: 0.9em;">2015 – 2019</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Prédiction de crises d'épilepsie par classification sur <strong>données réelles d'une cohorte</strong> (fréquence cardiaque) : feature selection, gestion des données déséquilibrées, benchmark et fine-tuning de modèles.</p>
-    <p style="margin: 0.5rem 0 0; font-size: 0.88em; color: #7b1fa2; font-style: italic;">Ce projet sort de mon cœur de métier data engineering, mais il illustre ma capacité à travailler avec des profils techniques variés — cliniciens, chercheurs, data scientists — au sein d'un projet pluridisciplinaire.</p>
+    <p style="margin: 0.5rem 0 0;">Conception et animation de formations techniques (Linux, bases de données, algorithmique, Python), et tutorat Python à l'Université de Lille (2021–2023).</p>
   </div>
 
 </div>
