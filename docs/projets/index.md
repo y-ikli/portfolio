@@ -18,7 +18,7 @@ Assistant 100 % local pour la chimie médicinale — interrogation de rapports s
 
 ---
 
-## [MEL WasteWatch](mel_wastewatch.md)
+## [Observatoire Déchets MEL](mel_wastewatch.md)
 
 Suivi du service de gestion des déchets de la Métropole Européenne de Lille à partir de ses données ouvertes — contrats de données à l'ingestion, historique construit jour après jour, tableau de bord Superset.
 

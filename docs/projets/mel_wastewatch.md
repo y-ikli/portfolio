@@ -1,4 +1,4 @@
-# MEL WasteWatch
+# Observatoire Déchets MEL
 
 **Suivi du service de gestion des déchets de la Métropole Européenne de Lille (MEL)**, à partir de ses données ouvertes : des API publiques au tableau de bord, avec un pipeline complet — extraction, historique, entrepôt, transformations, restitution — conçu pour un coût d'infrastructure minimal.
 

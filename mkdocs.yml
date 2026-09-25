@@ -10,7 +10,7 @@ nav:
     - 'Mes Projets': projets/index.md
     - Agence Média: projets/agence_media.md
     - MolScout: projets/molscout.md
-    - MEL WasteWatch: projets/mel_wastewatch.md
+    - Observatoire Déchets MEL: projets/mel_wastewatch.md
 
 theme:
   name: material
