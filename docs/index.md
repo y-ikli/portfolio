@@ -65,60 +65,6 @@ Mon expérience est ancrée dans le secteur santé, mais les problématiques adr
     </div>
   </div>
 
-  <!-- CARD 2 : Analytics Engineer -->
-  <div style="flex: 1 1 300px; border: 1px solid #43a047; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 12px rgba(67,160,71,0.10); display: flex; flex-direction: column;">
-    <div style="background: #43a047; padding: 1.1rem 1.4rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 0.8rem;">
-      <div>
-        <div style="color: #fff; font-size: 1.18em; font-weight: 700; line-height: 1.2;">Analytics Engineer</div>
-      </div>
-    </div>
-    <div style="padding: 1.2rem 1.4rem; flex: 1;">
-      <div style="font-size: 0.78em; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: #43a047; margin-bottom: 0.6rem;">Missions</div>
-      <ul style="margin: 0; list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.45rem;">
-        <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
-          <span style="color: #43a047; font-weight: 700; flex-shrink: 0;">&#8250;</span>
-          <span>Comprendre les <strong>besoins et défis métier</strong> pour traduire les problématiques business en solutions data concrètes.</span>
-        </li>
-        <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
-          <span style="color: #43a047; font-weight: 700; flex-shrink: 0;">&#8250;</span>
-          <span>Modéliser des données brutes en <strong>couches analytiques exploitables</strong> — staging, marts, documentation et tests de qualité des données.</span>
-        </li>
-        <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
-          <span style="color: #43a047; font-weight: 700; flex-shrink: 0;">&#8250;</span>
-          <span>Définir et <strong>industrialiser des KPIs métier</strong> — calculs versionnés, rapports automatisés et maintenus dans le temps.</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- CARD 3 : AI Engineer -->
-  <div style="flex: 1 1 300px; border: 1px solid #7c3aed; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 12px rgba(124,58,237,0.10); display: flex; flex-direction: column;">
-    <div style="background: #7c3aed; padding: 1.1rem 1.4rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 0.8rem;">
-      <div>
-        <div style="color: #fff; font-size: 1.18em; font-weight: 700; line-height: 1.2;">AI Engineer</div>
-      </div>
-    </div>
-    <div style="padding: 1.2rem 1.4rem; flex: 1; display: flex; flex-direction: column; gap: 1.1rem;">
-      <div>
-        <div style="font-size: 0.78em; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: #7c3aed; margin-bottom: 0.6rem;">Missions</div>
-        <ul style="margin: 0; list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.45rem;">
-          <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
-            <span style="color: #7c3aed; font-weight: 700; flex-shrink: 0;">&#8250;</span>
-            <span>Concevoir et déployer des <strong>systèmes RAG et agents LLM</strong> — retrieval sémantique, orchestration de chaînes et gestion du contexte.</span>
-          </li>
-          <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
-            <span style="color: #7c3aed; font-weight: 700; flex-shrink: 0;">&#8250;</span>
-            <span>Intégrer des <strong>bases vectorielles et modèles de langage</strong> dans des pipelines data existants — local ou cloud, confidentiel ou ouvert.</span>
-          </li>
-          <li style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.92em; line-height: 1.45;">
-            <span style="color: #7c3aed; font-weight: 700; flex-shrink: 0;">&#8250;</span>
-            <span>Industrialiser des applications IA — <strong>évaluation, observabilité et mise en production</strong> de bout en bout.</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
 </div>
 
 ## Stack technique

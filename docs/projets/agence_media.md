@@ -90,6 +90,12 @@ Meta Ads API (réelle)          Google Ads (simulé)
 
 ---
 
+## État du projet
+
+Ingestion, chargement idempotent BigQuery et modèles dbt testés et fonctionnels. La restitution Looker Studio est **en cours de construction** : les marts sont prêts pour la BI, le tableau de bord reste à finaliser.
+
+---
+
 ## Détail technique
 
 ### 1. Ingestion Python

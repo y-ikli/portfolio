@@ -1,6 +1,6 @@
 # MEL WasteWatch
 
-**Suivi du service de gestion des déchets de la Métropole Européenne de Lille (MEL)**, à partir de ses données ouvertes : des API publiques au tableau de bord, avec un pipeline complet — extraction, historique, entrepôt, transformations, restitution — pensé pour coûter **0 €**.
+**Suivi du service de gestion des déchets de la Métropole Européenne de Lille (MEL)**, à partir de ses données ouvertes : des API publiques au tableau de bord, avec un pipeline complet — extraction, historique, entrepôt, transformations, restitution — conçu pour un coût d'infrastructure minimal.
 
 > **Stack :** Python · GCS · Snowflake · dbt · Terraform · GitHub Actions · Apache Superset
 >
@@ -41,7 +41,7 @@ API MEL (WFS) + API Géo ──► extraction quotidienne (contrats de données)
                                                                                       │
                                                                               Apache Superset (restitution)
 
-Orchestration : GitHub Actions (cron quotidien, gratuit)
+Orchestration : GitHub Actions (cron quotidien)
 Infrastructure : Terraform (GCS, identité GitHub sans clé, entrepôt Snowflake avec plafond de crédits)
 ```
 
@@ -50,7 +50,7 @@ Infrastructure : Terraform (GCS, identité GitHub sans clé, entrepôt Snowflake
 - **Contrats de données déclaratifs** : chaque source a un contrat (colonnes attendues, plages de valeurs, volumétrie, géométrie). Si l'API dérive, l'ingestion échoue et n'écrit rien — plutôt qu'un chiffre faux passé inaperçu. Ces contrôles ont détecté 3 défauts réels de l'API en cours de développement (coordonnées inversées, centre de commune absent, emprise mal estimée).
 - **Historique construit, pas hérité** : le niveau de remplissage n'existe qu'au présent chez la source. Chaque jour d'extraction est conservé dans le stockage cloud, ce qui construit la série temporelle que l'API elle-même n'a pas.
 - **Idempotence** : rejouer un jour remplace ce jour, sans doublon et sans toucher aux autres — vérifié par un scénario de test à deux instantanés (point disparu, capteur devenu muet).
-- **Coût zéro assumé comme contrainte de conception**, pas comme excuse : un seul entrepôt, une planification par GitHub Actions plutôt qu'un orchestrateur dédié, une restitution auto-hébergée.
+- **Maîtrise des coûts intégrée dès la conception** : un seul entrepôt, une planification par GitHub Actions plutôt qu'un orchestrateur dédié, une restitution auto-hébergée.
 
 ## Qualité
 

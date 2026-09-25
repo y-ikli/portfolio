@@ -2,7 +2,7 @@
 
 **Assistant de recherche documentaire et de cheminformatique 100 % local**, pour la chimie médicinale et le DMPK — il répond aux questions d'un chimiste à partir de ses propres rapports, avec des sources citées, et calcule les propriétés moléculaires avec RDKit au lieu de les deviner. Aucune donnée ne quitte la machine.
 
-> **Stack :** Python · LangGraph · Ollama · Qdrant · RDKit · FastAPI · Streamlit
+> **Stack :** Python · LangChain · LangGraph · Ollama · Qdrant · RDKit · FastAPI · Streamlit
 >
 > **Statut :** prototype avancé, mesuré sur un corpus synthétique. Dépôt privé (données de chimie médicinale sensibles par nature du domaine) — **code source disponible sur demande**.
 
