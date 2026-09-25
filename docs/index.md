@@ -17,7 +17,6 @@
       </a>
     </p>
     <p style="margin: 0; color: #555; font-size: 0.95em;"><strong>Disponible dès mai 2026</strong></p>
-    <p style="margin: 0.3rem 0 0; color: #555; font-size: 0.95em;">Mobilité : Lille · Paris · France</p>
   </div>
 </div>
 
