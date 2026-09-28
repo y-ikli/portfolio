@@ -24,11 +24,11 @@
 
 ## À propos
 
-Data Engineer avec **3 ans d'expérience** dans des environnements exigeants — santé publique, biotech, marketing digital — je construis des pipelines ELT fiables, testés et documentés, de la source brute aux KPIs décisionnels.
+J'ai commencé ma carrière comme enseignant, déjà passionné par le numérique, les algorithmes et Linux. Cette passion m'a ramené à l'université, de la licence jusqu'au master, pour faire de la data mon métier.
 
-Habitué à travailler en autonomie sur des projets transverses, je m'appuie sur la **Modern Data Stack** (Python · SQL · dbt · Airflow · BigQuery/Snowflake · Docker) pour livrer des solutions robustes, versionnées et reproductibles.
+Depuis trois ans, je suis Data Engineer. J'interviens sur tout le cycle de vie de la donnée, de la source brute jusqu'aux indicateurs utilisés par les équipes métier, en appliquant à la data les bonnes pratiques du développement logiciel : tests automatisés, CI/CD, code versionné et documenté.
 
-Mon expérience est ancrée dans le secteur santé, mais les problématiques adressées — fiabilité des données, orchestration, modélisation analytique — sont pleinement transférables à d'autres secteurs. **[Voir les projets réalisés →](./projets/index.md)**
+J'ai surtout travaillé sur des données de santé : une plateforme de recherche clinique déployée dans trois hôpitaux européens chez Inria, une base de molécules chez Apteeus, des indicateurs de pilotage pour un groupe hospitalier chez Alicante. Ce que j'aime, c'est construire des données sur lesquelles les autres peuvent compter. **[Voir les projets réalisés →](./projets/index.md)**
 
 ---
 
