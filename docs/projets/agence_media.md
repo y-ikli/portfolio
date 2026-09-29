@@ -1,8 +1,8 @@
-# Marketing Data Platform
+# Media Data Platform
 
-**Pipeline ELT publicitaire** — Meta Ads (API réelle) + Google Ads — vers des data marts analytiques dans BigQuery, avec transformations dbt et validation qualité automatisée.
+**Pipeline ELT publicitaire** — Meta Ads (API réelle) et Google Ads — vers des tables analytiques dans BigQuery, avec transformations dbt et contrôles qualité automatiques.
 
-> **Stack :** Python · BigQuery ·dbt · GitHub Actions
+> **Stack :** Python · BigQuery · dbt · GitHub Actions
 
 **Repo :** [github.com/y-ikli/media-data-platform](https://github.com/y-ikli/media-data-platform)
 
@@ -10,11 +10,11 @@
 
 ## Contexte
 
-Une agence marketing gère des campagnes sur Meta et Google simultanément. Chaque plateforme expose ses données dans son propre format : nommages différents, métriques incohérentes, exports manuels.
+Une agence marketing gère des campagnes sur Meta et Google en même temps. Chaque plateforme livre ses données dans son propre format : noms différents, métriques incohérentes, exports manuels.
 
-**Problème concret :** le CTR n'est pas calculé de la même façon selon la source. Comparer Meta et Google sur les mêmes campagnes et les mêmes dates devient impossible sans un socle normalisé.
+**Problème concret :** le CTR n'est pas calculé de la même façon selon la source. Comparer Meta et Google sur les mêmes campagnes et les mêmes dates devient impossible.
 
-**Solution :** un pipeline ELT qui unifie les deux sources en une seule table analytique, avec une définition unique de chaque KPI.
+**Solution :** un pipeline qui réunit les deux sources dans une seule table analytique, avec une définition unique de chaque indicateur.
 
 ---
 
@@ -24,181 +24,53 @@ Une agence marketing gère des campagnes sur Meta et Google simultanément. Chaq
 Meta Ads API (réelle)          Google Ads (simulé)
         │                              │
         ▼                              ▼
-  Python connector             Python connector
-  (facebook-business SDK)      (Strategy pattern — même interface)
-        │                              │
+  Connecteur Python            Connecteur Python
+        │        (même interface)      │
         └──────────────┬───────────────┘
                        ▼
-              mdp_raw (BigQuery)
-              Données brutes + métadonnées (UUID, ingested_at)
-              Partitionné par date — idempotent
+              BigQuery — données brutes
+              partitionnées par date, rejouables sans doublon
                        │
                        ▼
               dbt — 3 couches
-              ├─► Staging       — typage, nettoyage, standardisation par source
-              ├─► Intermediate  — union des schémas (UNION ALL)
-              └─► Marts         — KPI calculés, prêts pour la BI
+              ├─► Staging       — nettoyage et typage par source
+              ├─► Intermediate  — union des deux sources
+              └─► Marts         — indicateurs prêts pour la BI
 ```
-
-> En production, un orchestrateur (Airflow) déclencherait ce pipeline quotidiennement pour ingérer les données J-1, relancer dbt et valider la qualité.
 
 ---
 
 ## Résultats
 
-| Source | Lignes | Campagnes | Spend | Période |
-|--------|--------|-----------|-------|---------|
-| Meta Ads (réelle) | 447 | 46 | $1 402 | 2023-04-23 → 2025-08-25 |
-| Google Ads (simulé) | 4 280 | 5 | — | même période |
+| Source | Lignes | Campagnes | Période |
+|--------|--------|-----------|---------|
+| Meta Ads (réelle) | 447 | 46 | 2023-04 → 2025-08 |
+| Google Ads (simulé) | 4 280 | 5 | même période |
 
-**Table finale :** 4 727 lignes · 36 tests PASS · 0 erreur
+**Table finale :** 4 727 lignes · 1 ligne = 1 campagne × 1 date × 1 plateforme · 57 tests dbt au vert
+
+Indicateurs calculés : CTR, CPC, CPA, taux de conversion, ROAS (valeur des conversions / dépense).
 
 ---
 
 ## Aperçu
 
-### BigQuery — Datasets
-
-![BigQuery datasets](../images_projets/agence_media/bigquery_datasets.png)
-*4 datasets avec responsabilités distinctes : raw → staging → intermediate → marts.*
-
-> Capture antérieure à la refonte du chargement idempotent ; à reprendre une fois l'infrastructure appliquée sur un projet GCP réel.
-
----
-
-### BigQuery — Table finale
-
 ![BigQuery mart_campaign_daily](../images_projets/agence_media/bigquery_mart.png)
-*`mart_campaign_daily` : KPI calculés, données Meta + Google unifiées.*
-
-> Même limite : capture à refaire sur BigQuery une fois l'infrastructure appliquée.
-
----
-
-### dbt — Run & Tests
-
-Exécution réelle sur DuckDB (mêmes modèles et tests que sur BigQuery), après la refonte du chargement idempotent :
-
-```
-Finished running 1 incremental model, 2 table models, 47 data tests, 4 unit tests, 3 view models
-Completed successfully
-Done. PASS=57 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=57
-```
-
----
-
-### dbt — Lineage
+*Table finale : indicateurs Meta et Google unifiés.*
 
 ![Lineage dbt](../images_projets/agence_media/lineage.png)
-*Sources → staging → intermediate → marts. Traçabilité end-to-end.*
-
-### dbt — Documentation
+*Lineage dbt : de la source brute aux indicateurs, chaque étape est traçable.*
 
 ![Documentation dbt](../images_projets/agence_media/dbt_serve.png)
-*Documentation générée automatiquement (`dbt docs generate`), sans compte cloud : colonnes, description, tests, relation cible.*
+*Documentation générée automatiquement : colonnes, descriptions, tests.*
 
 ---
 
-## État du projet
+## Ce qui rend le pipeline fiable
 
-Ingestion, chargement idempotent BigQuery et modèles dbt testés et fonctionnels. La restitution Looker Studio est **en cours de construction** : les marts sont prêts pour la BI, le tableau de bord reste à finaliser.
+- **Rejouable sans doublon** : relancer un chargement ne duplique jamais les données.
+- **Traçable** : chaque ligne est reliée à l'exécution qui l'a chargée.
+- **Une seule définition par indicateur**, versionnée dans Git et documentée.
+- **Testé à chaque modification** : tests dbt (clés, valeurs, cohérence des métriques) et CI GitHub Actions (lint, tests unitaires, compilation dbt).
 
----
-
-## Détail technique
-
-### 1. Ingestion Python
-
-Classe abstraite `DataSourceConnector` avec 3 étapes :
-
-```
-extract()            ← implémenté par chaque source
-load_raw()           ← enrichissement metadata (ingested_at, extract_run_id UUID)
-write_to_bigquery()  ← écriture WRITE_APPEND, déduplication par partition
-```
-
-Ajouter une nouvelle source (TikTok, LinkedIn) = implémenter uniquement `extract()`.
-
-### 2. BigQuery — Architecture Medallion
-
-| Dataset | Rôle | Type |
-|---------|------|------|
-| `mdp_raw` | Données brutes + audit | Table partitionnée |
-| `mdp_staging` | Standardisation par source | Vue dbt |
-| `mdp_intermediate` | Union des sources, schéma commun | Vue dbt |
-| `mdp_marts` | KPI finaux, optimisés BI | Table clusterisée |
-
-### 3. KPI dbt
-
-| KPI | Formule |
-|-----|---------|
-| CTR | clicks / impressions |
-| CPC | spend / clicks |
-| CPA | spend / conversions |
-| ROAS | conversions / spend |
-| Taux de conversion | conversions / clicks |
-
-Grain garanti : **1 ligne = 1 campagne × 1 date × 1 plateforme**
-
-### 4. Qualité des données
-
-- `not_null` sur toutes les clés et métriques
-- `accepted_values` sur `platform`
-- `unique_combination_of_columns` sur (report_date, campaign_id, platform)
-- Tests SQL : CTR ≤ 100%, clicks ≤ impressions, métriques ≥ 0
-
-### 5. CI/CD — GitHub Actions
-
-- Lint Python (`pylint`) — fail si score < 10/10
-- Tests unitaires (`pytest`)
-- Compilation dbt (sans credentials BigQuery)
-
----
-
-## Choix techniques
-
-### Ingestion
-
-| Outil | Type | Quand l'utiliser |
-|-------|------|-----------------|
-| **Connecteur Python custom** ← *ce projet* | Code maîtrisé | Apprentissage, contrôle total |
-| **Fivetran** | SaaS managé | Production, budget disponible, 300+ connecteurs |
-| **Airbyte** | Open source | Self-hosted, alternative Fivetran |
-
-En production réelle, Fivetran ou Airbyte seraient préférables (maintenabilité, monitoring natif, gestion des schémas évolutifs).
-
-### Transformation
-
-| Problème | Solution dbt |
-|----------|-------------|
-| "Ce KPI est calculé comment ?" | Lineage graph + doc auto |
-| "Les données sont-elles fiables ?" | Tests automatiques à chaque run |
-| "Deux équipes, deux CTR différents" | Une seule définition, versionnée dans git |
-
-**Alternatives :**
-
-- SQL pur dans BigQuery → pas de tests, pas de gestion des dépendances.
-- Spark / Dataproc → justifié pour des volumes > TB.
-- pandas → en mémoire, pour l'exploration.
-
-### Data Warehouse
-
-| Critère | BigQuery | Snowflake | Redshift |
-|---------|----------|-----------|---------|
-| Prix | Pay-per-query | Pay-per-compute | Instance permanente |
-| Scalabilité | Serverless | Serverless | Nœuds à gérer |
-| SQL | Standard | Standard | PostgreSQL-like |
-
-Le code dbt est portable : changer `profiles.yml` suffit pour migrer sur Snowflake ou Redshift.
-
----
-
-## Points notables
-
-- **Idempotence** : pipeline rejouable sans doublons — `extract_run_id` trace chaque run.
-- **Traçabilité** : chaque ligne porte un UUID liant la donnée à son run d'ingestion.
-- **Schéma cross-platform** : `campaign_id` casté en STRING (Google = string, Meta = entier) pour le `UNION ALL`.
-- **Valeurs manquantes** : `conversions` null pour Meta (non fourni par l'API) → CPA/ROAS null pour Meta, ce qui est correct.
-
----
-
+Détail technique et choix d'architecture : voir le [dépôt GitHub](https://github.com/y-ikli/media-data-platform).

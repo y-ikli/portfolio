@@ -1,12 +1,10 @@
 # Projets
 
-## [Marketing Data Platform](agence_media.md)
+## [Media Data Platform](agence_media.md)
 
 Pipeline ELT unifiant Meta Ads et Google Ads dans BigQuery — normalisation des KPI, transformations dbt et validation qualité automatisée.
 
 **Stack :** Python · BigQuery · dbt · GitHub Actions
-
-*Tableau de bord Looker Studio en cours de construction.*
 
 ---
 

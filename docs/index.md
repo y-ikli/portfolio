@@ -28,7 +28,9 @@ J'ai commencé ma carrière comme enseignant, déjà passionné par le numériqu
 
 Depuis trois ans, je suis Data Engineer. J'interviens sur tout le cycle de vie de la donnée, de la source brute jusqu'aux indicateurs utilisés par les équipes métier, en appliquant à la data les bonnes pratiques du développement logiciel : tests automatisés, CI/CD, code versionné et documenté.
 
-Curieux de nature, je vois l'apprentissage comme quelque chose qui ne s'arrête jamais : chaque projet est l'occasion de progresser. De mon passé d'enseignant, j'ai gardé le goût d'aider et de transmettre, dans une revue de code, une documentation ou une simple explication à un collègue. Enfin, la confidentialité et le secret professionnel font naturellement partie de ma façon de travailler. **[Voir les projets réalisés →](./projets/index.md)**
+Curieux de nature, je vois l'apprentissage comme quelque chose qui ne s'arrête jamais : chaque projet est l'occasion de progresser. De mon passé d'enseignant, j'ai gardé le goût d'aider et de transmettre, dans une revue de code, une documentation ou une simple explication à un(e) collègue. Enfin, la confidentialité et le secret professionnel font naturellement partie de ma façon de travailler.
+
+**[Voir les projets réalisés →](./projets/index.md)**
 
 ---
 
