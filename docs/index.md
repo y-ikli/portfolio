@@ -28,7 +28,7 @@ J'ai commencé ma carrière comme enseignant, déjà passionné par le numériqu
 
 Depuis trois ans, je suis Data Engineer. J'interviens sur tout le cycle de vie de la donnée, de la source brute jusqu'aux indicateurs utilisés par les équipes métier, en appliquant à la data les bonnes pratiques du développement logiciel : tests automatisés, CI/CD, code versionné et documenté.
 
-J'ai surtout travaillé sur des données de santé : une plateforme de recherche clinique déployée dans trois hôpitaux européens chez Inria, une base de molécules chez Apteeus, des indicateurs de pilotage pour un groupe hospitalier chez Alicante. Ce que j'aime, c'est construire des données sur lesquelles les autres peuvent compter. **[Voir les projets réalisés →](./projets/index.md)**
+Curieux de nature, je vois l'apprentissage comme quelque chose qui ne s'arrête jamais : chaque projet est l'occasion de progresser. De mon passé d'enseignant, j'ai gardé le goût d'aider et de transmettre, dans une revue de code, une documentation ou une simple explication à un collègue. Enfin, la confidentialité et le secret professionnel font naturellement partie de ma façon de travailler. **[Voir les projets réalisés →](./projets/index.md)**
 
 ---
 
@@ -139,9 +139,9 @@ J'ai surtout travaillé sur des données de santé : une plateforme de recherche
 
 ## Formation
 
-**Master Data Science** *(parcours santé)* — Université de Lille · 2023  
-**Master MEEF** *(pédagogie du numérique et informatique)* — Université de Lille · 2021  
-**Licence Mathématiques & Informatique** *(génie logiciel)* — Université Ibn Zohr · 2015
+**Master Data Science en santé** — Université de Lille · 2023  
+**Master MEEF Informatique** — Université de Lille · 2021  
+**Licence Mathématiques & Informatique – Génie logiciel** — Université Ibn Zohr · 2015
 
 ---
 
