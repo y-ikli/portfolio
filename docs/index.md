@@ -24,11 +24,11 @@
 
 ## À propos
 
-J'ai commencé ma carrière comme enseignant, déjà passionné par le numérique, les algorithmes et Linux. Cette passion m'a ramené à l'université, de la licence jusqu'au master, pour faire de la data mon métier.
+Data Engineer depuis trois ans, j'interviens sur toute la chaîne de la donnée : du cadrage du besoin avec les équipes métier jusqu'à des données fiables, testées et prêtes à l'emploi. J'applique à la data les bonnes pratiques du développement logiciel : tests automatisés, CI/CD, code versionné et documenté.
 
-Depuis trois ans, je suis Data Engineer. J'interviens sur tout le cycle de vie de la donnée, de la source brute jusqu'aux indicateurs utilisés par les équipes métier, en appliquant à la data les bonnes pratiques du développement logiciel : tests automatisés, CI/CD, code versionné et documenté.
+Mon parcours est atypique, mais chaque étape a été un choix. J'ai commencé dans l'enseignement, avec une passion pour l'informatique, Linux et l'open source, que j'ai d'abord vécue dans le monde associatif. J'ai ensuite repris une licence par passion, en parallèle de mon travail, puis un master pour faire de la data mon métier.
 
-Curieux de nature, je vois l'apprentissage comme quelque chose qui ne s'arrête jamais : chaque projet est l'occasion de progresser. De mon passé d'enseignant, j'ai gardé le goût d'aider et de transmettre, dans une revue de code, une documentation ou une simple explication à un(e) collègue. Enfin, la confidentialité et le secret professionnel font naturellement partie de ma façon de travailler.
+De ce parcours, j'ai gardé le goût d'aider et de transmettre, dans une revue de code, une documentation ou une simple explication à un(e) collègue. Curieux de nature, je continue d'apprendre à chaque projet. Enfin, la confidentialité et le secret professionnel font naturellement partie de ma façon de travailler.
 
 **[Voir les projets réalisés →](./projets/index.md)**
 
@@ -80,7 +80,6 @@ Curieux de nature, je vois l'apprentissage comme quelque chose qui ne s'arrête 
     <div style="font-size: 0.7em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #9c27b0; margin-bottom: 0.5rem;">Visualisation & Reporting</div>
     <div style="display: flex; flex-direction: column; gap: 0.25rem;">
       <span style="font-size: 0.88em; color: #6a1b9a; font-weight: 600;">Looker Studio</span>
-      <span style="font-size: 0.88em; color: #6a1b9a; font-weight: 600;">Apache Superset</span>
     </div>
   </div>
 
@@ -108,15 +107,23 @@ Curieux de nature, je vois l'apprentissage comme quelque chose qui ne s'arrête 
       <strong>INRIA — Data Engineer (CDD)</strong>
       <span style="color: #888; font-size: 0.9em;">Lille · Sept. 2024 – Avr. 2026</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Plateforme data de recherche clinique déployée on-premise dans 3 hôpitaux européens (architecture fédérée), avec environnement de tests/CI-CD sur GCP. Conception et mise en production de la plateforme end-to-end : pipelines de transformation (Python, dbt, Airflow, Docker), de l'ingestion brute aux modèles analytiques exposés. Suite de tests automatisés et CI/CD GitLab permettant à chaque hôpital de déployer en autonomie ; documentation d'architecture (MkDocs).</p>
+    <p style="margin: 0.5rem 0 0;">Projet européen de recherche avec plusieurs partenaires : une plateforme où chaque hôpital garde ses données chez lui, tandis que les chercheurs lancent leurs analyses sur l'ensemble des sites. Au sein d'une équipe de six ingénieurs : modèles de transformation dbt et tests automatiques pour garantir un format commun à tous les sites, intégration continue avec GitLab CI et conteneurisation Docker, environnement de test sur GCP, documentation (MkDocs). Une première version est installée dans trois hôpitaux pilotes. Projet mené en anglais.</p>
   </div>
 
   <div style="border-left: 3px solid #fb8c00; padding: 0.8rem 1.2rem; background: rgba(251,140,0,0.03); border-radius: 0 6px 6px 0;">
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.3rem;">
-      <strong>APTEEUS — Data Engineer (Stage)</strong>
+      <strong>APTEEUS — Data Engineer (Alternance)</strong>
       <span style="color: #888; font-size: 0.9em;">Lille · Jan. – Juil. 2023</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Chimiothèque interne alimentée par plusieurs sources externes. Seul profil technique du projet : construction d'un pipeline <strong>MDM</strong> pour dédupliquer et enrichir la base de composés (bases moléculaires, chimiothèques), normalisation, contrôles qualité end-to-end. Décisions d'architecture validées en comité avec les équipes métier ; documentation et accompagnement à l'usage de la base.</p>
+    <p style="margin: 0.5rem 0 0;">Seul profil technique du projet. Enrichissement de la base de données interne avec plusieurs sources externes : schéma validé avec les équipes métier, pipelines de fusion garantissant la qualité des données et la traçabilité de chaque information, interface simple permettant à l'équipe de relancer les traitements en autonomie. Résultat : une base de référence unique et fiable (<strong>MDM</strong>).</p>
+  </div>
+
+  <div style="border-left: 3px solid #00838f; padding: 0.8rem 1.2rem; background: rgba(0,131,143,0.03); border-radius: 0 6px 6px 0;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.3rem;">
+      <strong>CHU de Lille &amp; CIC-IT — Machine Learning Engineer (Projet de Master)</strong>
+      <span style="color: #888; font-size: 0.9em;">Lille · Sept. 2022 – Juin 2023</span>
+    </div>
+    <p style="margin: 0.5rem 0 0;">Classification des crises d'épilepsie à partir de la variabilité de la fréquence cardiaque, sur des données cliniques déséquilibrées : préparation des données, feature engineering, entraînement et évaluation de modèles (Scikit-learn). Le projet a mis en évidence la faisabilité de la détection des crises à partir d'un signal cardiaque.</p>
   </div>
 
   <div style="border-left: 3px solid #43a047; padding: 0.8rem 1.2rem; background: rgba(67,160,71,0.03); border-radius: 0 6px 6px 0;">
@@ -124,15 +131,15 @@ Curieux de nature, je vois l'apprentissage comme quelque chose qui ne s'arrête 
       <strong>Alicante (OSPI) — Analytics Engineer (Stage)</strong>
       <span style="color: #888; font-size: 0.9em;">Lille · Avr. – Août 2022</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Projet de valorisation de la donnée pour un groupe hospitalier multi-établissements. Industrialisation et automatisation de flux de données en tables analytiques et rapports paramétrables, avec calcul d'indicateurs de pilotage (KPIs) pour le reporting métier de chaque établissement.</p>
+    <p style="margin: 0.5rem 0 0;">Éditeur de logiciels pour les établissements de santé. Automatisation de l'analyse d'activité réalisée pour chaque nouveau client : contrôle de la qualité des données, calcul des indicateurs et rapports multi-formats, avec un même traitement réutilisable pour chaque nouvel établissement.</p>
   </div>
 
   <div style="border-left: 3px solid #9c27b0; padding: 0.8rem 1.2rem; background: rgba(156,39,176,0.03); border-radius: 0 6px 6px 0;">
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.3rem;">
-      <strong>Formateur</strong>
-      <span style="color: #888; font-size: 0.9em;">2015 – 2019</span>
+      <strong>Enseignant, formateur et tuteur en informatique</strong>
+      <span style="color: #888; font-size: 0.9em;">1999 – 2023</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Conception et animation de formations techniques (Linux, bases de données, algorithmique, Python), et tutorat Python à l'Université de Lille (2021–2023).</p>
+    <p style="margin: 0.5rem 0 0;">Enseignement en primaire, puis enseignement de l'informatique au collège et au lycée ; formations techniques au sein d'une association dédiée à Linux et à l'open source (Linux, algorithmique, bases de données), et tutorat Python à l'Université de Lille (2020–2023).</p>
   </div>
 
 </div>
