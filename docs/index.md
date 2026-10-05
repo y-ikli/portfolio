@@ -115,7 +115,7 @@ De ce parcours, j'ai gardé le goût d'aider et de transmettre, dans une revue d
       <strong>APTEEUS — Data Engineer (Alternance)</strong>
       <span style="color: #888; font-size: 0.9em;">Lille · Jan. – Juil. 2023</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Seul profil technique du projet. Enrichissement de la base de données interne avec plusieurs sources externes : schéma validé avec les équipes métier, pipelines de fusion garantissant la qualité des données et la traçabilité de chaque information, interface simple permettant à l'équipe de relancer les traitements en autonomie. Résultat : une base de référence unique et fiable (<strong>MDM</strong>).</p>
+    <p style="margin: 0.5rem 0 0;">Enrichissement de la base de données interne avec plusieurs sources externes. En tant que seul profil technique du projet : schéma validé avec les équipes métier, pipelines de fusion garantissant la qualité des données et la traçabilité de chaque information, interface simple permettant à l'équipe de relancer les traitements en autonomie. Résultat : une base de référence unique et fiable (<strong>MDM</strong>).</p>
   </div>
 
   <div style="border-left: 3px solid #00838f; padding: 0.8rem 1.2rem; background: rgba(0,131,143,0.03); border-radius: 0 6px 6px 0;">
@@ -139,7 +139,7 @@ De ce parcours, j'ai gardé le goût d'aider et de transmettre, dans une revue d
       <strong>Enseignant, formateur et tuteur en informatique</strong>
       <span style="color: #888; font-size: 0.9em;">1999 – 2023</span>
     </div>
-    <p style="margin: 0.5rem 0 0;">Enseignement en primaire, puis enseignement de l'informatique au collège et au lycée ; formations techniques au sein d'une association dédiée à Linux et à l'open source (Linux, algorithmique, bases de données), et tutorat Python à l'Université de Lille (2020–2023).</p>
+    <p style="margin: 0.5rem 0 0;">Enseignement en primaire, puis enseignement de l'informatique au collège et au lycée ; formations techniques au sein d'une association dédiée à Linux et à l'open source (Linux, algorithmique, bases de données), et tutorat Python à l'Université de Lille (2021–2023).</p>
   </div>
 
 </div>
@@ -150,7 +150,7 @@ De ce parcours, j'ai gardé le goût d'aider et de transmettre, dans une revue d
 
 **Master Data Science en santé** — Université de Lille · 2023  
 **Master MEEF Informatique** — Université de Lille · 2021  
-**Licence Mathématiques & Informatique – Génie logiciel** — Université Ibn Zohr · 2015
+**Licence Mathématiques & Informatique – Génie logiciel** — Université Ibn Zohr (Maroc) · 2015
 
 ---
 

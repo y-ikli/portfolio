@@ -2,7 +2,7 @@
 
 ## [Media Data Platform](agence_media.md)
 
-Pipeline ELT unifiant Meta Ads et Google Ads dans BigQuery — normalisation des KPI, transformations dbt et validation qualité automatisée.
+Pipeline ELT qui unifie les données publicitaires de Meta Ads (API réelle) et de Google Ads (données simulées) dans BigQuery : une seule définition par indicateur, modèles dbt en couches, 57 tests automatisés et CI GitHub Actions.
 
 **Stack :** Python · BigQuery · dbt · GitHub Actions
 
