@@ -1,8 +1,8 @@
 # Media Data Platform
 
-**Pipeline ELT publicitaire** — Meta Ads (API réelle) et Google Ads — vers des tables analytiques dans BigQuery, avec transformations dbt et contrôles qualité automatiques.
+**Projet dbt sur BigQuery** : unifier les données publicitaires de Meta Ads (API réelle) et de Google Ads (données simulées) dans des tables analytiques fiables, avec une seule définition par indicateur, des modèles en couches et des tests automatiques.
 
-> **Stack :** Python · BigQuery · dbt · GitHub Actions
+> **Stack :** dbt · BigQuery · SQL · Python · GitHub Actions
 
 **Repo :** [github.com/y-ikli/media-data-platform](https://github.com/y-ikli/media-data-platform)
 
@@ -14,7 +14,7 @@ Une agence marketing gère des campagnes sur Meta et Google en même temps. Chaq
 
 **Problème concret :** le CTR n'est pas calculé de la même façon selon la source. Comparer Meta et Google sur les mêmes campagnes et les mêmes dates devient impossible.
 
-**Solution :** un pipeline qui réunit les deux sources dans une seule table analytique, avec une définition unique de chaque indicateur.
+**Solution :** un projet dbt qui réunit les deux sources dans une seule table analytique, avec une définition unique de chaque indicateur, testée et documentée.
 
 ---
 
@@ -33,10 +33,25 @@ Meta Ads API (réelle)          Google Ads (simulé)
                        │
                        ▼
               dbt — 3 couches
-              ├─► Staging       — nettoyage et typage par source
-              ├─► Intermediate  — union des deux sources
-              └─► Marts         — indicateurs prêts pour la BI
+              ├─► Staging       — nettoyage et typage, un modèle par source
+              ├─► Intermediate  — union des deux sources dans un schéma commun
+              └─► Marts         — table quotidienne par campagne (incrémentale),
+                                  synthèse mensuelle par plateforme, dimension campagne
 ```
+
+---
+
+## Le projet dbt
+
+| Élément | Ce qui est mis en place |
+|---|---|
+| **Modélisation en couches** | Staging (un modèle par source), intermediate (schéma commun), marts (faits quotidiens, synthèse mensuelle, dimension campagne) |
+| **Modèle incrémental** | La table quotidienne retraite une fenêtre glissante de jours, car les plateformes corrigent leurs chiffres après coup ; partitionnée par date et clusterisée sur BigQuery |
+| **Macros** | Calcul sûr des ratios (pas de division par zéro) et fonctions de dates compatibles avec plusieurs moteurs SQL |
+| **Tests** | Tests génériques (`not_null`, `unique`, `accepted_values`), tests sur combinaisons de clés (dbt_utils), règles métier (CTR ≤ 100 %, clics ≤ impressions) et tests unitaires dbt sur les calculs d'indicateurs |
+| **Sources** | Sources déclarées avec contrôle de fraîcheur des données |
+| **Documentation** | Colonnes et modèles décrits, lineage généré automatiquement |
+| **CI** | À chaque modification : exécution complète de dbt (modèles et tests) et vérification que le projet se charge sur BigQuery |
 
 ---
 
@@ -47,7 +62,7 @@ Meta Ads API (réelle)          Google Ads (simulé)
 | Meta Ads (réelle) | 447 | 46 | 2023-04 → 2025-08 |
 | Google Ads (simulé) | 4 280 | 5 | même période |
 
-**Table finale :** 4 727 lignes · 1 ligne = 1 campagne × 1 date × 1 plateforme · 57 tests dbt au vert
+**Table finale :** 4 727 lignes · 1 ligne = 1 campagne × 1 date × 1 plateforme · 51 tests dbt au vert (47 tests de données, 4 tests unitaires)
 
 Indicateurs calculés : CTR, CPC, CPA, taux de conversion, ROAS (valeur des conversions / dépense).
 
@@ -71,6 +86,6 @@ Indicateurs calculés : CTR, CPC, CPA, taux de conversion, ROAS (valeur des conv
 - **Rejouable sans doublon** : relancer un chargement ne duplique jamais les données.
 - **Traçable** : chaque ligne est reliée à l'exécution qui l'a chargée.
 - **Une seule définition par indicateur**, versionnée dans Git et documentée.
-- **Testé à chaque modification** : tests dbt (clés, valeurs, cohérence des métriques) et CI GitHub Actions (lint, tests unitaires, compilation dbt).
+- **Testé à chaque modification** : 51 tests dbt et CI GitHub Actions (lint, tests Python, exécution de dbt).
 
 Détail technique et choix d'architecture : voir le [dépôt GitHub](https://github.com/y-ikli/media-data-platform).

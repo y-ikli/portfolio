@@ -76,13 +76,6 @@ De ce parcours, j'ai gardé le goût d'aider et de transmettre, dans une revue d
     </div>
   </div>
 
-  <div style="background: rgba(156,39,176,0.06); border-radius: 8px; padding: 0.7rem 1rem;">
-    <div style="font-size: 0.7em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #9c27b0; margin-bottom: 0.5rem;">Visualisation & Reporting</div>
-    <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-      <span style="font-size: 0.88em; color: #6a1b9a; font-weight: 600;">Looker Studio</span>
-    </div>
-  </div>
-
   <div style="background: rgba(124,58,237,0.07); border-radius: 8px; padding: 0.7rem 1rem;">
     <div style="font-size: 0.7em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #7c3aed; margin-bottom: 0.5rem;">IA & LLM</div>
     <div style="display: flex; flex-direction: column; gap: 0.25rem;">
