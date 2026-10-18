@@ -1,0 +1,25 @@
+# Le portfolio a déménagé sur https://y-ikli.github.io/.
+# Ce dépôt ne publie plus qu'une redirection, pour que les anciens liens (/portfolio/...) restent valides.
+name: Deploy redirection to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./redirection
+          publish_branch: gh-pages
+          force_orphan: true
